@@ -4,42 +4,34 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Examen Front-End</title>
-		<link rel="icon" type="image/png" href="./assets/images/home-page/logo/logo.png">
+		<link rel="icon" type="image/png" href="../assets/images/home-page/logo/logo.png">
 		<meta name="description" content="4 éléments, des hôtels inouïs partout dans le monde. Venez consulter nos offres de nos locations de vacances partout dans le monde.">
 		<link rel="stylesheet" href="../fonts/styles.css">
 		<link rel="stylesheet" href="../css/styles.css">
 	</head>
 	<body>
-		<!---- HEADER ---->
+		<!--- HEADER --->
 		<header>
 			<!--- NAVBAR --->
 			<nav>
 				<ul>
 					<li>
-						<a href="../index.html"title="Les 4 éléments. Des hôtels inouïs partout dans le monde">
+						<a href="../index.html" title="Les 4 éléments. Des hôtels inouïs partout dans le monde">
 							<img src="../assets/images/hotel-feu/logo/logo.png" alt="Logo des 4 éléments">
 						</a>
 					</li>
-					<!--- AJOUTER URL PAGE FEU--->
-					<li>
-						<a href="#" title="Pour se rendre sur la page Feu des 4 éléments">feu</a>
-					</li>
-					<li>
-						<a href="#" title="Pour se rendre sur la page Air des 4 éléments">air</a>
-					</li>
-					<li>
-						<a href="#" title="Pour se rendre sur la page Terre des 4 éléments">terre</a>
-					</li>
-					<li>
-						<a href="#" title="Pour se rendre sur la page Eau des 4 éléments">eau</a>
-					</li>
+					<!--- AJOUTER URL PAGE FEU --->
+					<li><a href="#" title="Pour se rendre sur la page Feu des 4 éléments">feu</a></li>
+					<li><a href="#" title="Pour se rendre sur la page Air des 4 éléments">air</a></li>
+					<li><a href="#" title="Pour se rendre sur la page Terre des 4 éléments">terre</a></li>
+					<li><a href="#" title="Pour se rendre sur la page Eau des 4 éléments">eau</a></li>
 				</ul>
 				<div class="contact-info">
 					<!--- CONTACT --->
 					<div class="contact">
 						<a href="#">contact</a>
 						<a href="#" title="Suivez nos actualités sur Instagram">
-                            <img src="../assets/images/hotel-feu/icons/instagram.svg" alt="Logo d'Instagram des 4 éléments">
+							<img src="../assets/images/hotel-feu/icons/instagram.svg" alt="Logo d'Instagram des 4 éléments">
 						</a>
 						<a href="#" title="Suivez nos actualités sur Facebook">
 							<img src="../assets/images/hotel-feu/icons/facebook.svg" alt="Logo de Facebook des 4 éléments">
@@ -47,7 +39,6 @@
 					</div>
 					<!--- CONNEXION --->
 					<div class="connexion">
-						<!--- Bouton primary --->
 						<div class="button-primary">
 							<a href="#" title="Reserver votre logement sur les 4 éléments">reserver</a>
 						</div>
@@ -56,34 +47,65 @@
 				</div>
 			</nav>
 		</header>
-		<!---- MAIN --->
+		<!--- MAIN --->
 		<main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+			<section class="formulaire">
+				<div class="container-formulaire">
+					<div class="container-title">
+						<h1>formulaire de réservation</h1>
+					</div>
+					<form action="/connection.html" id="formulaires" class="JS-form">
+						<div class="identity">
+							<!--- NOM--->
+							<div>
+								<label for="nom">votre nom de famille:</label>
+								<input type="text" id="nom" name="nom" placeholder="Saisissez votre nom de famille...">
+							</div>
+							<!--- PRENOM --->
+							<div>
+								<label for="prenom">votre prénom:</label>
+								<input type="text" id="prenom" name="prenom" placeholder="Saisissez votre prénom...">
+							</div>
+						</div>
+						<!--- ADRESSE --->
+						<div class="adress">
+							<div>
+								<label for="adressepostal">votre adresse postale:</label>
+								<input type="text" id="adressepostal" name="adressepostal" placeholder="Saisissez votre adresse postale...">
+							</div>
+							<div>
+								<label for="codepostal">votre code postal:</label>
+								<input type="text" id="codepostal" name="codepostal" placeholder="Saisissez votre code postal...">
+							</div>
+							<div>
+								<label for="ville">votre ville de résidence:</label>
+								<input type="text" id="ville" name="ville" placeholder="Saisissez votre ville...">
+							</div>
+						</div>
+						<!--- CONTACT --->
+						<div class="contact">
+							<div>
+								<label for="email">votre adresse adresse mail:</label>
+								<input type="text" id="email" name="email" placeholder="Saisissez votre adresse mail...">
+							</div>
+							<div>
+								<label for="number">votre numéro de téléphone</label>
+								<input type="number" name="number" id="number" placeholder="Saisissez votre numéro de telephone...">
+							</div>
+						</div>
+					</form>
+					<!--- Bouton secondary --->
+					<div class="button-secondary">
+						<a href="#" title="Reserver une location de nos igloos">reserver</a>
+					</div>
+				</div>
+			</section>
 		</main>
-		<!--- FOOTER -->
+		<!--- FOOTER --->
 		<footer>
-			<!--- NAVIGATION FOOTER -->
+			<!--- NAVIGATION FOOTER --->
 			<nav>
-				<!--- CONTAINER SOCIAL -->
+				<!--- CONTAINER SOCIAL --->
 				<div class="social-media">
 					<div class="logo">
 						<img src="../assets/images/hotel-feu/logo/logo.png" alt="Logo des 4 éléments.">
@@ -91,39 +113,31 @@
 					<p>N’attendez plus pour vivre l’expérience 4 éléments le temps d’une nuit.</p>
 					<div class="social">
 						<a href="#" title="Suivez nos actualités sur Instagram">
-                            <img src="../assets/images/hotel-feu/icons/instagram.svg" alt="Logo d'Instagram des 4 éléments">
+							<img src="../assets/images/hotel-feu/icons/instagram.svg" alt="Logo d'Instagram des 4 éléments">
 						</a>
 						<a href="#" title="Suivez nos actualités sur Facebook">
 							<img src="../assets/images/hotel-feu/icons/facebook.svg" alt="Logo de Facebook des 4 éléments">
 						</a>
 					</div>
 				</div>
-				<!--- CONTAINER CONTACT -->
+				<!--- CONTAINER CONTACT --->
 				<div class="contact">
-					<h4>contact</h4>	
+					<h4>contact</h4>
 					<p>adresse : 8 avenue exemple</p>
 					<p>ouverture : Tous les jours de 9h à 20h30</p>
-					<p>tél : 33 08 280 28002</p>
+					<p>tél : 33 08 280 28002</p>
 				</div>
 				<!--- Bouton primary --->
 				<div class="button-primary">
-					<a href="#" title="Reserver votre logement sur les 4 éléments">reserver</a>
+					<a href="#" title="Continuer le formulaire">suivant</a>
 				</div>
-				<!--- CONTAINER CONTACT -->
+				<!--- MENTIONS LÉGALES --->
 				<div class="mentions-legales">
 					<ul>
-						<li>
-							<a href="#" title="Mentions légales du site les 4 éléments.">mentions légales</a>
-						</li>
-						<li>
-							<a href="#" title="Crédits du site des 4 éléments.">crédits</a>
-						</li>
-						<li>
-							<a href="#" title="Conditons générales des 4 éléments.">cgv</a>
-						</li>
-						<li>
-							<a href="#" title="Consulter la page de confidentialité pour en savoir plus.">confidentialité</a>
-						</li>
+						<li><a href="#" title="Mentions légales du site les 4 éléments.">mentions légales</a></li>
+						<li><a href="#" title="Crédits du site des 4 éléments.">crédits</a></li>
+						<li><a href="#" title="Conditions générales des 4 éléments.">cgv</a></li>
+						<li><a href="#" title="Consulter la page de confidentialité pour en savoir plus.">confidentialité</a></li>
 					</ul>
 				</div>
 			</nav>
