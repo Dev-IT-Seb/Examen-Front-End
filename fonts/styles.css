@@ -1,5 +1,24 @@
-/** FONT **/
+/**------------- FONTS --------------**/
+/*-- KARLA --*/
+/* BOLD */
 @font-face {
-    font-family:"";
-    src: url("");
+    font-family:"karlabold";
+    src: url("./karla/Karla-Bold.ttf");
 }
+/* REGULAR */
+@font-face {
+    font-family:("karlaregular");
+    src: url("./karla/Karla-Regular.ttf");
+}
+/*-- PLAYER DISPLAY --*/
+/* BOLD */
+@font-face {
+    font-family:"playerbold";
+    src: url("./player-display/PlayfairDisplay-Bold.ttf");
+}
+/* MEDIUM */
+@font-face {
+    font-family:"playermedium";
+    src: url("./player-display/PlayfairDisplay-Medium.ttf");
+}
+/*-----------------------------------------------------------*/
