@@ -4,21 +4,301 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Examen Front-End</title>
-		<link rel="icon" type="image/png" href="#">
-		<meta name="description" content="">
+		<link rel="icon" type="image/png" href="./assets/images/home-page/logo/logo.png">
+		<meta name="description" content="4 éléments, des hôtels inouïs partout dans le monde. Venez consulter nos offres de nos locations de vacances partout dans le monde.">
 		<link rel="stylesheet" href="./fonts/styles.css">
 		<link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
+		<!---- HEADER ---->
 		<header>
-			
+			<!--- NAVBAR --->
+			<nav>
+				<ul>
+					<li>
+						<a href="./index.html" title="Les 4 éléments. Des hôtels inouïs partout dans le monde">
+							<img src="./assets/images/home-page/logo/logo.png" alt="Logo des 4 éléments">
+						</a>
+					</li>
+					<!--- AJOUTER URL PAGE FEU--->
+					<li>
+						<a href="#" title="Pour se rendre sur la page Feu des 4 éléments">feu</a>
+					</li>
+					<li>
+						<a href="#" title="Pour se rendre sur la page Air des 4 éléments">air</a>
+					</li>
+					<li>
+						<a href="#" title="Pour se rendre sur la page Terre des 4 éléments">terre</a>
+					</li>
+					<li>
+						<a href="#" title="Pour se rendre sur la page Eau des 4 éléments">eau</a>
+					</li>
+				</ul>
+				<div class="contact-info">
+					<!--- CONTACT --->
+					<div class="contact">
+						<a href="#">contact</a>
+						<a href="#" title="Suivez nos actualités sur Instagram">
+							<img src="./assets/images/home-page/icons/instagram.svg" alt="Logo d'Instagram des 4 éléments">
+						</a>
+						<a href="#" title="Suivez nos actualités sur Facebook">
+							<img src="./assets/images/home-page/icons/facebook.svg" alt="Logo de Facebook des 4 éléments">
+						</a>
+					</div>
+					<!--- CONNEXION --->
+					<div class="connexion">
+						<!--- Bouton primary --->
+						<div class="button-primary">
+							<a href="#" title="Reserver votre logement sur les 4 éléments">reserver</a>
+						</div>
+						<a href="#" title="Connectez-vous avec votre compte">se connecter</a>
+					</div>
+				</div>
+			</nav>
 		</header>
+		<!---- MAIN --->
 		<main>
-
+			<div class="hero-banner">
+				<video class="video" autoplay loop muted playsinline>
+					<source src="./assets/images/home-page/background/banner/home.mp4" type="video/mp4">
+					Votre navigateur ne supporte pas la vidéo.
+				</video>
+				<!---- TITLE --->
+				<div class="title">
+					<h1>Lorem ipsum dolor sit amet consectetur.</h1>
+				</div>
+			</div>
+			<!--- FORMULAIRE HOME -->
+			<form action="#" id="formulaires" class="formHome">
+				<!---- TITLE --->
+				<div class="title">
+					<p>rechercher une disponibilité</p>
+				</div>
+				<!--- CHOIX HOTEL --->
+				<label for="choix">choisir un hôtel</label>
+				<select id="choix" name="choix">
+					<option value="hotel terre">hôtel terre</option>
+					<option value="hotel feu">hôtel feu</option>
+					<option value="hotel eau">hôtel eau</option>
+					<option value="hotel air">hôtel air</option>
+				</select>
+				<!--- NOMBRE DE PERSONNE --->
+				<label for="number">nombre de personnes</label>
+				<input type="number" name="number" id="number">
+				<!--- DATE RESERVATION --->
+				<label for="date">Date</label>
+				<input type="date" name="date" id="date">
+				<!--- Bouton secondary --->
+				<div class="button-secondary">
+					<a href="#" title="Rechercher votre logement sur les 4 éléments">chercher</a>
+				</div>
+			</form>
+			<!--- SECTION FEU-->
+			<section class="hotel-feu">
+				<!---  CONTAINER FEU --->
+				<div class="container-hotel">
+					<h2>hôtel Feu</h2>
+					<!---  EMPLACEMENT --->
+					<div class="location">
+						<div class="countries">
+							<img src="./assets/images/home-page/icons/map.svg" alt="Icone d'un emplacement">
+							<p>finlande</p>
+						</div>
+						<!---  TESTIMONIAL --->
+						<div class="testimonial">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-empty.svg" alt="Icone d'une étoile vide">
+							<p>(325 avis)</p>
+						</div>
+					</div>
+					<div class="description">
+						<p>L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande. Feu de laterre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.
+						</p>
+					</div>
+					<!--- Bouton secondary --->
+					<div class="button-secondary">
+						<a href="#" title="Reserver votre hôtel Feu sur les 4 éléments">reserver</a>
+					</div>
+				</div>
+				<!--- Slide Images --->
+				<div class="slideshow-container">
+					<img src="./assets/images/home-page/slideshow/hotel-igloo.jpg" alt="Image des logement igloos des 4 éléments.">
+					<img src="./assets/images/home-page/slideshow/igloo-espace.jpg" alt="Image des igloos depuis le ciel.">
+				</div>
+			</section>
+			<!--- SECTION AIR -->
+			<section class="hotel-air">
+				<!--- Slide Images --->
+				<div class="slideshow-container">
+					<img src="./assets/images/home-page/slideshow/chemin.jpg" alt="Image montrant un chemin à traverser en plein nature.">
+					<img src="./assets/images/home-page/slideshow/hotel-air.jpg" alt="Image montrant le merveilleux hôtel Air des 4 éléments.">
+				</div>
+				<!--- CONTAINER AIR-->
+				<div class="container-hotel">
+					<h2>hôtel air</h2>
+					<div class="location">
+						<div class="countries">
+							<img src="./assets/images/home-page/icons/map.svg" alt="Icone d'un emplacement">
+							<p>bresil</p>
+						</div>
+						<div class="testimonial">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-empty.svg" alt="Icone d'une étoile vide">
+							<p>(325 avis)</p>
+						</div>
+					</div>
+					<!---- DESCRIPTION --->
+					<div class="description">
+						<p>L'hôtel Air se situe à la frontière du Brésil et du Pérou. 
+							C'est un concept architectural innovant qui a permis une implantation à la cîme de la forêt pour offrir 
+							un panorama vertigineux et cotoyerchaque matin, de votre chambre (avec ou sans piscine), 
+							les oiseaux à votre réveil.
+						</p>
+					</div>
+					<!--- Bouton secondary --->
+					<div class="button-secondary">
+						<a href="#" title="Reserver votre hôtel Air sur les 4 éléments">reserver</a>
+					</div>
+				</div>
+			</section>
+			<!--- SECTION TERRE -->
+			<section class="hotel-terre">
+				<!---  DESCRIPTION --->
+				<div class="container-hotel">
+					<h2>hôtel Terre</h2>
+					<div class="location">
+						<div class="countries">
+							<img src="./assets/images/home-page/icons/map.svg" alt="Icone d'un emplacement">
+							<p>thaïlande</p>
+						</div>
+						<div class="testimonial">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-empty.svg" alt="Icone d'une étoile vide">
+							<p>(325 avis)</p>
+						</div>
+					</div>
+					<!---- DESCRIPTION --->
+					<div class="description">
+						<p>L'hôtel Terre est situé dans des grottes naturelles en Thaïlande. Retaillées et aménagées avec beaucoup de soin, 
+							les chambres de l'hôtel vous offriront soit la fraîcheur et l'apaisement à près de vingt mètres de profondeur, 
+							soit un hâvre de paix ouvrant sur l'horizon de la mer au loin.
+						</p>
+					</div>
+					<!--- Bouton secondary --->
+					<div class="button-secondary">
+						<a href="#" title="Reserver votre hôtel Terre sur les 4 éléments">reserver</a>
+					</div>
+				</div>
+				<!--- Slide Images --->
+				<div class="slideshow-container">
+					<img src="./assets/images/home-page/slideshow/hotel-terre.jpg" alt="Image montrant les merveilleux chambres de l'hôtel Terre des 4 éléments.">
+					<img src="./assets/images/home-page/slideshow/terre-mythique.jpg" alt="Image montrant un endroit convivial à dinner dans l'hôtel Terre des 4 éléments.">
+				</div>
+			</section>
+			<!--- SECTION EAU -->
+			<section class="hotel-eau">
+				<!--- Slide Images --->
+				<div class="slideshow-container">
+					<img src="./assets/images/home-page/slideshow/eau-nageur.jpg" alt="Image montrant un nageur dans l'eau bleue de l'hotel des 4 éléments.">
+					<img src="./assets/images/home-page/slideshow/hotel-eau.jpg" alt="Image montrant le merveilleux hôtel Eau des 4 éléments.">
+				</div>
+				<!--- CONTAINER AIR-->
+				<div class="container-hotel">
+					<h2>hôtel eau</h2>
+					<div class="location">
+						<div class="countries">
+							<img src="./assets/images/home-page/icons/map.svg" alt="Icone d'un emplacement">
+							<p>île du pacifique</p>
+						</div>
+						<div class="testimonial">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-full.svg" alt="Icone d'une étoile remplie">
+							<img src="./assets/images/home-page/icons/star-empty.svg" alt="Icone d'une étoile vide">
+							<p>(325 avis)</p>
+						</div>
+					</div>
+					<!---- DESCRIPTION --->
+					<div class="description">
+						<p>L'hôtel Eau est situé sur une île de 2 kilomètres carrés très exactement équidistante de Vladivostok et de Los Angeles. C'est le milieu duPacifique. 
+							Vous y disposerez de votre plage, de votre bateau et de votre majordome privés. Votre chambre est un caisson immergé à deux mètres sous l'eau.
+						</p>
+					</div>
+					<!--- Bouton secondary --->
+					<div class="button-secondary">
+						<a href="#" title="Reserver votre hôtel Eau sur les 4 éléments">reserver</a>
+					</div>
+				</div>
+			</section>
+			<!--- SECTION CONCEPT -->
+			<section class="concept">
+				<!--- CONTAINER CONCEPT -->
+				<div class="container-concept">
+					<!--- TITLE -->
+					<h3>le concept</h3>
+					<!--- IMG -->
+					<img src="./assets/images/home-page/items/concept-home.jpg" alt="Image montrant d'un concept d'une hôtel.">
+					<!--- DESCRIPTION -->
+					<div class="description">
+						<p>Les 4 éléments sont un ensemble de logements insolites dans 4 lieux incroyables aux alentours du monde. Chaque hôtel a été imaginé autour d'un élément naturel de la Terre.</p>
+					</div>
+				</div>
+			</section>
 		</main>
+		<!--- FOOTER -->
 		<footer>
-
+			<!--- NAVIGATION FOOTER -->
+			<nav>
+				<!--- CONTAINER SOCIAL -->
+				<div class="social-media">
+					<div class="logo">
+						<img src="./assets/images/home-page/logo/logo.png" alt="Logo des 4 éléments.">
+					</div>
+					<p>N’attendez plus pour vivre l’expérience 4 éléments le temps d’une nuit.</p>
+					<div class="social">
+						<a href="#" title="Suivez nos actualités sur Instagram">
+							<img src="./assets/images/home-page/icons/instagram.svg" alt="Logo d'Instagram des 4 éléments">
+						</a>
+						<a href="#" title="Suivez nos actualités sur Facebook">
+							<img src="./assets/images/home-page/icons/facebook.svg" alt="Logo de Facebook des 4 éléments">
+						</a>
+					</div>
+				</div>
+				<!--- CONTAINER CONTACT -->
+				<div class="contact">
+					<h4>contact</h4>	
+					<p>adresse : 8 avenue exemple</p>
+					<p>ouverture : Tous les jours de 9h à 20h30</p>
+					<p>tél : 33 08 280 28002</p>
+				</div>
+				<!--- Bouton primary --->
+				<div class="button-primary">
+					<a href="#" title="Reserver votre logement sur les 4 éléments">reserver</a>
+				</div>
+				<!--- CONTAINER CONTACT -->
+				<div class="mentions-legales">
+					<ul>
+						<li>
+							<a href="#" title="Mentions légales du site les 4 éléments.">mentions légales</a>
+						</li>
+						<li>
+							<a href="#" title="Crédits du site des 4 éléments.">crédits</a>
+						</li>
+						<li>
+							<a href="#" title="Conditons générales des 4 éléments.">cgv</a>
+						</li>
+						<li>
+							<a href="#" title="Consulter la page de confidentialité pour en savoir plus.">confidentialité</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</footer>
 	</body>
-	<script src="./js/script.js"></script> 
 </html>
