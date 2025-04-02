@@ -930,19 +930,28 @@ body {
 
 .testimonial {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.testimonial .container-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonial .container-item {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
 }
 .testimonial .title {
   font-size: 30px;
   font-family: "karlabold";
   color: #363A2B;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 .testimonial .title h3::first-letter {
   text-transform: uppercase;
-}
-.testimonial .container-item {
-  display: flex;
-  justify-content: center;
-  gap: 15rem;
 }
 .testimonial .item-one {
   width: 485px;
@@ -1007,7 +1016,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 .information .container {
   display: flex;
@@ -1040,7 +1049,7 @@ body {
 .information .accessibilite {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  gap: 15rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
