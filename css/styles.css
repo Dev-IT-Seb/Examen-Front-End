@@ -558,4 +558,59 @@ header .contact-info .connexion a:nth-child(2) {
   color: #4F6234;
 }
 
+.hotel-feu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+}
+.hotel-feu .container-firehotel {
+  display: flex;
+  flex-direction: column;
+  height: 511px;
+  margin-left: 20rem;
+  justify-content: space-around;
+}
+.hotel-feu .container-firehotel h1 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-feu .container-firehotel .description {
+  width: 28rem;
+  height: 10rem;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.hotel-feu .location {
+  display: flex;
+  flex-direction: column;
+}
+.hotel-feu .location .countries {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  gap: 0.5rem;
+}
+.hotel-feu .location .testimonial {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-feu .location .testimonial p {
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+
+.container-firehotel .description p::first-letter {
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=styles.css.map */

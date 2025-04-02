@@ -1,5 +1,74 @@
-// HOME PAGE
+//--- PAGE HOTEL FEU
 @use "../abstracts/colors" as *;
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
+//------------------------------------//
+//--- SECTION FEU
+.hotel-feu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+
+    .container-firehotel {
+        display: flex;
+        flex-direction: column;
+        height: 511px;
+        margin-left: 20rem;
+        justify-content: space-around;
+
+        h1 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+
+        .description {
+            width: 28rem;
+            height: 10rem;
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+
+        .countries {
+            display: flex;
+            flex-direction: row;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            gap: 0.5rem;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                font-family: $KarlaRegular;
+                font-size: 0.9375rem;
+                color: $primaryColor;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+}
+
+.container-firehotel{
+
+    .description {
+
+        p::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}
 //------------------------------------//
