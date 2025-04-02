@@ -463,7 +463,6 @@
     width: 100%;
 
     .title {
-        background-color: aliceblue;
         font-size: 30px;
         font-family: $KarlaBold;
         color: $primaryColor;
@@ -543,10 +542,124 @@
         .description p::first-letter {
 
             text-transform: uppercase;
-
         }
 
     }
 }
 //--------------- INFORMATION -------------------//
 //
+.information {
+    height: 660px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    h4 {
+        font-size: 48px;
+        font-family: $DisplayBold;
+        color: $primaryColor;
+    }
+    h4::first-letter {
+        text-transform: uppercase;
+    }
+
+    .text-box {
+        p {
+            color: $primaryColor;
+            font-size: 20px;
+        }
+
+        p:nth-child(1) {
+            font-family: $KarlaBold;
+        }
+
+        p:nth-child(1)::first-letter {
+
+            text-transform: uppercase;
+        }
+        p:nth-child(2){
+            font-family: $KarlaRegular;
+        }
+
+        p:nth-child(3){
+            font-family: $KarlaRegular;
+        }
+
+    }
+
+    .accessibilite {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .column:first-child{
+            width: 485px;
+            height: 319px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column:last-child{
+            width: 485px;
+            height: 319px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text-box:nth-child(3) {
+            padding-left: 2rem;
+        }
+
+        .text-box{
+            padding-left: 1rem;
+        }
+
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .contact {
+
+        width: 449px;
+
+        h4 {
+            color: $primaryColor;
+            font-size: 30px;
+            font-family: $DisplayBold;
+        }
+
+        p{
+            color: #000000;
+            font-family: $KarlaRegular;
+            font-size: 20px;
+        }
+
+        p::first-letter{
+            text-transform: uppercase;
+
+        }
+    }   
+}

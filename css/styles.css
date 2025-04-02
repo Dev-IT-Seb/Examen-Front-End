@@ -932,7 +932,6 @@ body {
   width: 100%;
 }
 .testimonial .title {
-  background-color: aliceblue;
   font-size: 30px;
   font-family: "karlabold";
   color: #363A2B;
@@ -999,6 +998,96 @@ body {
   padding-top: 1rem;
 }
 .testimonial .item-two .description p::first-letter {
+  text-transform: uppercase;
+}
+
+.information {
+  height: 660px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.information .container {
+  display: flex;
+  flex-direction: column;
+}
+.information h4 {
+  font-size: 48px;
+  font-family: "playerbold";
+  color: #363A2B;
+}
+.information h4::first-letter {
+  text-transform: uppercase;
+}
+.information .text-box p {
+  color: #363A2B;
+  font-size: 20px;
+}
+.information .text-box p:nth-child(1) {
+  font-family: "karlabold";
+}
+.information .text-box p:nth-child(1)::first-letter {
+  text-transform: uppercase;
+}
+.information .text-box p:nth-child(2) {
+  font-family: "karlaregular";
+}
+.information .text-box p:nth-child(3) {
+  font-family: "karlaregular";
+}
+.information .accessibilite {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.information .accessibilite .column {
+  display: flex;
+  flex-direction: column;
+}
+.information .accessibilite .column:first-child {
+  width: 485px;
+  height: 319px;
+  display: flex;
+  justify-content: space-between;
+}
+.information .accessibilite .column:last-child {
+  width: 485px;
+  height: 319px;
+  display: flex;
+  justify-content: space-between;
+}
+.information .accessibilite .text-box:nth-child(3) {
+  padding-left: 2rem;
+}
+.information .accessibilite .text-box {
+  padding-left: 1rem;
+}
+.information .row {
+  display: flex;
+  flex-direction: row;
+}
+.information .row .column {
+  display: flex;
+  flex-direction: column;
+}
+.information .contact {
+  width: 449px;
+}
+.information .contact h4 {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+}
+.information .contact p {
+  color: #000000;
+  font-family: "karlaregular";
+  font-size: 20px;
+}
+.information .contact p::first-letter {
   text-transform: uppercase;
 }
 
