@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: $BackgroundColorPage;
 }
 //-----------------------------------//
 //
@@ -363,6 +364,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 7rem;
   
     img {
       height: 20.875rem;
@@ -399,10 +401,10 @@ body {
 //--- Section Creator
 
 .creator {
-    background-color: antiquewhite;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 7rem;
   
     .container-description {
       display: flex;

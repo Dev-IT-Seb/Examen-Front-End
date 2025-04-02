@@ -1,5 +1,91 @@
-// FOOTER
+//--- FOOTER
 @use "../abstracts/colors" as *;
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
+
+footer{
+    background-color: $ColorFooter;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-family: $KarlaMedium;
+            font-size: 15px;
+            color: $primaryColor;
+        }
+        .logo img{
+            width: 192px;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+        h4{
+            font-family: $DisplayBold;
+            font-size: 20px;
+            color: $primaryColor;
+        }
+        h4::first-letter {
+            text-transform: uppercase;
+        }
+    }
+}
+
+footer {
+
+    .contact{
+        p::first-letter{
+            text-transform: uppercase;
+        } 
+        p:nth-child(4){
+
+            padding-bottom: 1rem;
+        }
+        p {
+            color: $primaryColor;
+            font-size: 15px;
+            font-family: $KarlaRegular;
+        }
+    }
+    .contact-color {
+        color: $primaryColor;
+        font-family: $KarlaBold;
+        font-size: 15px;
+    }
+}
+
+footer {
+
+    .mentions-legales {
+
+        ul {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        li{
+            list-style: none;   
+        }
+        a {
+            color: red;
+            font-size: 15px;
+            font-family: $KarlaBold;
+            color: $primaryColor;
+        }
+    }
+}

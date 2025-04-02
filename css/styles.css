@@ -28,6 +28,77 @@
   text-transform: uppercase;
 }
 
+footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer nav .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "karlamedium";
+  font-size: 15px;
+  color: #363A2B;
+}
+footer nav .logo img {
+  width: 192px;
+}
+footer nav .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+footer nav h4 {
+  font-family: "playerbold";
+  font-size: 20px;
+  color: #363A2B;
+}
+footer nav h4::first-letter {
+  text-transform: uppercase;
+}
+
+footer .contact p::first-letter {
+  text-transform: uppercase;
+}
+footer .contact p:nth-child(4) {
+  padding-bottom: 1rem;
+}
+footer .contact p {
+  color: #363A2B;
+  font-size: 15px;
+  font-family: "karlaregular";
+}
+footer .contact-color {
+  color: #363A2B;
+  font-family: "karlabold";
+  font-size: 15px;
+}
+
+footer .mentions-legales ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .mentions-legales li {
+  list-style: none;
+}
+footer .mentions-legales a {
+  color: red;
+  font-size: 15px;
+  font-family: "karlabold";
+  color: #363A2B;
+}
+
 header {
   height: 4.5rem;
   width: 100%;
@@ -93,6 +164,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #E5E0DC;
 }
 
 .hero-banner {
@@ -404,6 +476,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 7rem;
 }
 .concept img {
   height: 20.875rem;
@@ -435,10 +508,10 @@ body {
 }
 
 .creator {
-  background-color: antiquewhite;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 7rem;
 }
 .creator .container-description {
   display: flex;
