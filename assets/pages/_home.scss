@@ -41,6 +41,7 @@ body {
         background-color: $TertiaryColor;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 778px;
         height: 226px;
         border-radius: 18px;
@@ -49,19 +50,21 @@ body {
             color: $primaryColor;
             font-size: 30px;
             font-family: $DisplayBold;
+            padding-left: 4rem;
         }
-
-        .title::first-letter {
+        .title p::first-letter {
             text-transform: uppercase;
         }
 
         .row {
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
             font-size: 17px;
             font-family: $KarlaRegular;
             color: $primaryColor;
         }
+
         .choice-hostel {
             display: flex;
             flex-direction: column;
@@ -85,9 +88,20 @@ body {
             text-transform: uppercase;
         }
         .cta-secondary {
-            background-color: antiquewhite;
             display: flex;
             justify-content: center;
+
+        }
+    }
+}
+.search-location {
+
+    .row {
+
+        label{
+            font-size: 17px;
+            font-family: $KarlaRegular;
+            color: #000000;
         }
     }
 }
@@ -451,4 +465,4 @@ body {
       }
     }
   }
-  
+  //-----------------------------------//

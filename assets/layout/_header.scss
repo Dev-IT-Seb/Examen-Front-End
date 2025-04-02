@@ -25,13 +25,20 @@ header {
             width: 28.5rem;
             gap: 2.2rem;
         }
+        li:first-letter {
+            text-transform: uppercase;
+            
+        }
 
         a {
             color: $primaryColor;
             text-decoration: none;
             font-family: $KarlaMedium;
-            font-size: 1.25rem;
-            text-transform: capitalize;
+            font-size: 1.25rem; 
+        }
+
+        a::first-letter {
+            text-transform: uppercase;
         }
 
         img {

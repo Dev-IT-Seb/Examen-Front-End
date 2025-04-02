@@ -13,6 +13,7 @@
   font-size: 20px;
   padding: 12px 16px;
   border-radius: 6px;
+  text-transform: capitalize;
 }
 
 .button-secondary a {
@@ -119,12 +120,17 @@ header nav ul {
   width: 28.5rem;
   gap: 2.2rem;
 }
+header nav li:first-letter {
+  text-transform: uppercase;
+}
 header nav a {
   color: #363A2B;
   text-decoration: none;
   font-family: "karlamedium";
   font-size: 1.25rem;
-  text-transform: capitalize;
+}
+header nav a::first-letter {
+  text-transform: uppercase;
 }
 header nav img {
   width: 9.9rem;
@@ -193,6 +199,7 @@ body {
   background-color: #D9C7B3;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 778px;
   height: 226px;
   border-radius: 18px;
@@ -201,13 +208,15 @@ body {
   color: #363A2B;
   font-size: 30px;
   font-family: "playerbold";
+  padding-left: 4rem;
 }
-.search-location .formHome .title::first-letter {
+.search-location .formHome .title p::first-letter {
   text-transform: uppercase;
 }
 .search-location .formHome .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   font-size: 17px;
   font-family: "karlaregular";
   color: #363A2B;
@@ -234,9 +243,14 @@ body {
   text-transform: uppercase;
 }
 .search-location .formHome .cta-secondary {
-  background-color: antiquewhite;
   display: flex;
   justify-content: center;
+}
+
+.search-location .row label {
+  font-size: 17px;
+  font-family: "karlaregular";
+  color: #000000;
 }
 
 .hotel-feu {
