@@ -3,3 +3,64 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
+.formulaire {
+    background-color: #dba9a9;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .container-formulaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $InputColor;
+        width: 100rem;
+        height: 20rem;
+        border-radius: 3%;
+
+        .form-reservation {
+            display: flex;
+            flex-direction: column;
+            width: 75rem;
+            gap: 2rem;
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+        }
+
+        .container {
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+        }
+
+        .container-title {
+            text-align: center;
+            font-family: $KarlaBold;
+            font-size: 30px;
+            color: $primaryColor;
+        }
+
+        label {
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            color: $primaryColor;
+        }
+        .lastname {
+            padding-right: 2rem;
+        }
+        .adress-postal {
+            padding-right: 2rem;
+        }
+        .code-postal {
+            padding-right: 2rem;
+        }
+        .courriel {
+            padding-right: 2rem;
+        }
+        .input {
+            width: 10rem;
+        }
+    }
+}
+//------------------------------------//

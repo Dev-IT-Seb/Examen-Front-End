@@ -1100,4 +1100,60 @@ body {
   text-transform: uppercase;
 }
 
+.formulaire {
+  background-color: #dba9a9;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.formulaire .container-formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E1D2C2;
+  width: 100rem;
+  height: 20rem;
+  border-radius: 3%;
+}
+.formulaire .container-formulaire .form-reservation {
+  display: flex;
+  flex-direction: column;
+  width: 75rem;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.formulaire .container-formulaire .container {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+}
+.formulaire .container-formulaire .container-title {
+  text-align: center;
+  font-family: "karlabold";
+  font-size: 30px;
+  color: #363A2B;
+}
+.formulaire .container-formulaire label {
+  font-size: 20px;
+  font-family: "karlaregular";
+  color: #363A2B;
+}
+.formulaire .container-formulaire .lastname {
+  padding-right: 2rem;
+}
+.formulaire .container-formulaire .adress-postal {
+  padding-right: 2rem;
+}
+.formulaire .container-formulaire .code-postal {
+  padding-right: 2rem;
+}
+.formulaire .container-formulaire .courriel {
+  padding-right: 2rem;
+}
+.formulaire .container-formulaire .input {
+  width: 10rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

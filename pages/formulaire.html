@@ -53,10 +53,11 @@
 					<div class="container-title">
 						<h1>formulaire de réservation</h1>
 					</div>
-					<form action="/connection.html" id="formulaires" class="JS-form">
-						<div class="identity">
+			
+					<form action="/connection.html" id="formulaires" class="form-reservation">
+						<div class="container">
 							<!--- NOM--->
-							<div>
+							<div class="lastname">
 								<label for="nom">votre nom de famille:</label>
 								<input type="text" id="nom" name="nom" placeholder="Saisissez votre nom de famille...">
 							</div>
@@ -67,12 +68,12 @@
 							</div>
 						</div>
 						<!--- ADRESSE --->
-						<div class="adress">
-							<div>
+						<div class="container">
+							<div class="adress-postal">
 								<label for="adressepostal">votre adresse postale:</label>
 								<input type="text" id="adressepostal" name="adressepostal" placeholder="Saisissez votre adresse postale...">
 							</div>
-							<div>
+							<div class="code-postal">
 								<label for="codepostal">votre code postal:</label>
 								<input type="text" id="codepostal" name="codepostal" placeholder="Saisissez votre code postal...">
 							</div>
@@ -82,14 +83,14 @@
 							</div>
 						</div>
 						<!--- CONTACT --->
-						<div class="contact">
-							<div>
-								<label for="email">votre adresse adresse mail:</label>
+						<div class="container">
+							<div class="courriel">
+								<label for="email">votre adresse mail:</label>
 								<input type="text" id="email" name="email" placeholder="Saisissez votre adresse mail...">
 							</div>
 							<div>
-								<label for="number">votre numéro de téléphone</label>
-								<input type="number" name="number" id="number" placeholder="Saisissez votre numéro de telephone...">
+								<label for="text">votre numéro de téléphone:</label>
+								<input type="text" name="text" id="text" placeholder="Saisissez votre numéro de téléphone...">
 							</div>
 						</div>
 					</form>
