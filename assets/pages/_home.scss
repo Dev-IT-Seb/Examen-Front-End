@@ -3,6 +3,13 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
+body {
+    background-color: $BackgroundColorPage;
+    
+}
+
+
+//------------------------------------//
 //--- Banner HomePage
 .hero-banner {
     display: flex;
@@ -457,4 +464,4 @@
       }
     }
   }
-  //-----------------------------------//
+//-----------------------------------//

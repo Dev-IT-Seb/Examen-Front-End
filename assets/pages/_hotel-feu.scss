@@ -61,7 +61,6 @@
         }
     }
 }
-
 .container-firehotel{
 
     .description {
@@ -72,3 +71,482 @@
     }
 }
 //------------------------------------//
+//--- SECTION OFFRES
+
+.offres {
+
+    .title-offres {
+        padding-left: 25rem;
+        padding-bottom: 3rem;
+    }
+    h2 {
+        font-size: 48px;
+        font-family: $DisplayBold;
+        color: #000000;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    .container-offres {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    //--------------------------------------- column igloo
+    .column-igloo {
+
+        .column-option-igloo {
+            display: flex;
+            flex-direction: column;
+            padding-right: 10rem;
+            gap: 1rem;
+    
+            .option {
+                display: flex;
+            }
+        }
+    
+        .column-option-lapony {
+            display: flex;
+            flex-direction: column;
+    
+            .option {
+                display: flex;
+            }
+        }
+    
+        .item {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+    
+        .detail-igloo {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            margin-top: 1rem;
+        }
+    
+        .detail-igloo::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .detail {
+            color: $SecondaryColor;
+            font-family: $KarlaRegular;
+            font-size: 15px;
+            padding-bottom: 1rem;
+        }
+    
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 40rem;
+        }
+    
+        .img-igloo {
+            display: flex;
+            justify-content: center;
+    
+            img {
+                width: 600px;
+                height: 432px;
+                margin-bottom: 90px;
+            }
+        }
+    
+        h3 {
+            color: $primaryColor;
+            font-family: $DisplayBold;
+            font-size: 30px;
+        }
+    
+        h3::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .reservation {
+            p {
+                color: $primaryColor;
+                font-family: $KarlaMedium;
+                font-size: 24px;
+                padding-bottom: 2rem;
+            }
+        }
+    
+        .tarif {
+            color: $primaryColor;
+            font-family: $KarlaBold;
+            font-size: 24px;
+        }
+    }
+
+    //--------------COLUMN Lapony-------------//
+
+    .column-lapony {
+
+        .column-option-lapony {
+            display: flex;
+            flex-direction: column;
+            padding-right: 10rem;
+            gap: 1rem;
+    
+            .option {
+                display: flex;
+            }
+        }
+    
+        .column-option-lapony {
+            display: flex;
+            flex-direction: column;
+    
+            .option {
+                display: flex;
+            }
+        }
+    
+        .item {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+    
+        .detail-lapony {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            margin-top: 1rem;
+        }
+    
+        .detail-lapony::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .detail {
+            color: $SecondaryColor;
+            font-family: $KarlaRegular;
+            font-size: 15px;
+            padding-bottom: 1rem;
+        }
+    
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 40rem;
+        }
+    
+        .img-lapony {
+            display: flex;
+            justify-content: center;
+    
+            img {
+                width: 600px;
+                height: 432px;
+                margin-bottom: 90px;
+            }
+        }
+    
+        h3 {
+            color: $primaryColor;
+            font-family: $DisplayBold;
+            font-size: 30px;
+        }
+    
+        h3::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .reservation {
+            p {
+                color: $primaryColor;
+                font-family: $KarlaMedium;
+                font-size: 24px;
+                padding-bottom: 2rem;
+            }
+        }
+    
+        .tarif {
+            color: $primaryColor;
+            font-family: $KarlaBold;
+            font-size: 24px;
+        }
+    }
+}
+//--------------- SERVICES -------------------//
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 1.5rem 0;
+    }
+
+    .title h3 {
+        color: $primaryColor;
+        font-size: 30px;
+        font-family: $DisplayBold;
+    } 
+
+    .title h3::first-letter {
+        text-transform: uppercase;
+    }
+
+    .title p {
+        font-size: 20px;
+        font-family: $KarlaRegular;
+        color: #000000;
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        .item {
+            position: relative;
+
+            h3 {
+                font-family: $DisplayBold;
+                font-size: 30px;
+                color: $ColorCardsSlider;
+            }
+
+            h3::first-letter{
+                text-transform: uppercase;
+            }
+        
+            img {
+
+                height: 350px;
+                width: 488px;
+                display: block;
+            }
+
+            .info {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                color: white;
+                padding: 1rem;
+                text-align: right;
+            }
+            p {
+                color: $ColorCardsSlider;
+                font-size: 20px;
+                font-family: $KarlaRegular;
+            }
+            p:last-child{
+                padding-top: 0.5rem;
+                color: $ColorCardsSliderDescript;
+                font-size: 20px;
+                font-family: $KarlaBold;
+
+            }
+        }
+    }
+}
+//-----------------------------------//
+//---- Activity
+
+.activity {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-bottom: 3rem;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 10rem;
+    }
+    .title h3 {
+
+        color: $primaryColor;
+        font-size: 30px;
+        font-family: $DisplayBold;
+    } 
+    h3::first-letter{
+        text-transform: uppercase;
+    }
+
+    .title p {
+        font-size: 20px;
+        font-family: $KarlaRegular;
+        color: #000000;
+    }
+
+    .carousel {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        .item {
+            position: relative;
+
+            h3 {
+                font-family: $DisplayBold;
+                font-size: 30px;
+                color: $ColorCardsSlider;
+            }
+            h3::first-letter{
+                text-transform: uppercase;
+            }
+
+            img {
+
+                height: 350px;
+                width: 488px;
+                display: block;
+            }
+
+            .info {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                color: white;
+                padding: 1rem;
+                text-align: right;
+            }
+            p {
+                color: $ColorCardsSlider;
+                font-size: 20px;
+                font-family: $KarlaRegular;
+            }
+        }
+    }
+}
+//--------------- TRAILER -------------------//
+.trailer {
+    position: relative;
+    width: 100%;
+    height: 940px;
+    overflow: hidden;
+
+    .video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+    }
+}
+//--------------- TESTIMONIAL -------------------//
+.testimonial {
+    width: 100%;
+
+    .title {
+        background-color: aliceblue;
+        font-size: 30px;
+        font-family: $KarlaBold;
+        color: $primaryColor;
+
+        h3::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    .container-item {
+        display: flex;
+        justify-content: center;
+        gap: 15rem;
+    }
+
+    //---- ITEM 1
+    .item-one {
+        width: 485px;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        .user {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .notes {
+            display: flex;
+        }
+
+        .container p:nth-child(1) {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaBold;
+        }
+        .description p {
+            color: $primaryColor;
+            font-family: $KarlaRegular;
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+
+        .description p::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    //---- ITEM 2
+    .item-two {
+        width: 485px;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        .user {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .notes {
+            display: flex;
+        }
+
+        .container p:nth-child(1) {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaBold;
+        }
+        .description p {
+            color: $primaryColor;
+            font-family: $KarlaRegular;
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+        .description p::first-letter {
+
+            text-transform: uppercase;
+
+        }
+
+    }
+}
+//--------------- INFORMATION -------------------//
+//

@@ -165,6 +165,10 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlamedium";
 }
 
+body {
+  background-color: #E5E0DC;
+}
+
 .hero-banner {
   display: flex;
   flex-direction: column;
@@ -610,6 +614,391 @@ header .contact-info .connexion a:nth-child(2) {
 }
 
 .container-firehotel .description p::first-letter {
+  text-transform: uppercase;
+}
+
+.offres .title-offres {
+  padding-left: 25rem;
+  padding-bottom: 3rem;
+}
+.offres h2 {
+  font-size: 48px;
+  font-family: "playerbold";
+  color: #000000;
+}
+.offres h2::first-letter {
+  text-transform: uppercase;
+}
+.offres .container-offres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.offres .column-igloo .column-option-igloo {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  gap: 1rem;
+}
+.offres .column-igloo .column-option-igloo .option {
+  display: flex;
+}
+.offres .column-igloo .column-option-lapony {
+  display: flex;
+  flex-direction: column;
+}
+.offres .column-igloo .column-option-lapony .option {
+  display: flex;
+}
+.offres .column-igloo .item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.offres .column-igloo .detail-igloo {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlaregular";
+  margin-top: 1rem;
+}
+.offres .column-igloo .detail-igloo::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-igloo .detail {
+  color: #4F6234;
+  font-family: "karlaregular";
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+.offres .column-igloo .card {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+.offres .column-igloo .img-igloo {
+  display: flex;
+  justify-content: center;
+}
+.offres .column-igloo .img-igloo img {
+  width: 600px;
+  height: 432px;
+  margin-bottom: 90px;
+}
+.offres .column-igloo h3 {
+  color: #363A2B;
+  font-family: "playerbold";
+  font-size: 30px;
+}
+.offres .column-igloo h3::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-igloo .reservation p {
+  color: #363A2B;
+  font-family: "karlamedium";
+  font-size: 24px;
+  padding-bottom: 2rem;
+}
+.offres .column-igloo .tarif {
+  color: #363A2B;
+  font-family: "karlabold";
+  font-size: 24px;
+}
+.offres .column-lapony .column-option-lapony {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  gap: 1rem;
+}
+.offres .column-lapony .column-option-lapony .option {
+  display: flex;
+}
+.offres .column-lapony .column-option-lapony {
+  display: flex;
+  flex-direction: column;
+}
+.offres .column-lapony .column-option-lapony .option {
+  display: flex;
+}
+.offres .column-lapony .item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.offres .column-lapony .detail-lapony {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlaregular";
+  margin-top: 1rem;
+}
+.offres .column-lapony .detail-lapony::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-lapony .detail {
+  color: #4F6234;
+  font-family: "karlaregular";
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+.offres .column-lapony .card {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+.offres .column-lapony .img-lapony {
+  display: flex;
+  justify-content: center;
+}
+.offres .column-lapony .img-lapony img {
+  width: 600px;
+  height: 432px;
+  margin-bottom: 90px;
+}
+.offres .column-lapony h3 {
+  color: #363A2B;
+  font-family: "playerbold";
+  font-size: 30px;
+}
+.offres .column-lapony h3::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-lapony .reservation p {
+  color: #363A2B;
+  font-family: "karlamedium";
+  font-size: 24px;
+  padding-bottom: 2rem;
+}
+.offres .column-lapony .tarif {
+  color: #363A2B;
+  font-family: "karlabold";
+  font-size: 24px;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+.services .title {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1.5rem 0;
+}
+.services .title h3 {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+}
+.services .title h3::first-letter {
+  text-transform: uppercase;
+}
+.services .title p {
+  font-size: 20px;
+  font-family: "karlaregular";
+  color: #000000;
+}
+.services .carousel {
+  display: flex;
+  flex-direction: column;
+}
+.services .slider {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.services .slider .item {
+  position: relative;
+}
+.services .slider .item h3 {
+  font-family: "playerbold";
+  font-size: 30px;
+  color: #E5E0DC;
+}
+.services .slider .item h3::first-letter {
+  text-transform: uppercase;
+}
+.services .slider .item img {
+  height: 350px;
+  width: 488px;
+  display: block;
+}
+.services .slider .item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  text-align: right;
+}
+.services .slider .item p {
+  color: #E5E0DC;
+  font-size: 20px;
+  font-family: "karlaregular";
+}
+.services .slider .item p:last-child {
+  padding-top: 0.5rem;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "karlabold";
+}
+
+.activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-bottom: 3rem;
+}
+.activity .title {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 10rem;
+}
+.activity .title h3 {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+}
+.activity h3::first-letter {
+  text-transform: uppercase;
+}
+.activity .title p {
+  font-size: 20px;
+  font-family: "karlaregular";
+  color: #000000;
+}
+.activity .carousel {
+  display: flex;
+  flex-direction: column;
+}
+.activity .slider {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.activity .slider .item {
+  position: relative;
+}
+.activity .slider .item h3 {
+  font-family: "playerbold";
+  font-size: 30px;
+  color: #E5E0DC;
+}
+.activity .slider .item h3::first-letter {
+  text-transform: uppercase;
+}
+.activity .slider .item img {
+  height: 350px;
+  width: 488px;
+  display: block;
+}
+.activity .slider .item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  text-align: right;
+}
+.activity .slider .item p {
+  color: #E5E0DC;
+  font-size: 20px;
+  font-family: "karlaregular";
+}
+
+.trailer {
+  position: relative;
+  width: 100%;
+  height: 940px;
+  overflow: hidden;
+}
+.trailer .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial {
+  width: 100%;
+}
+.testimonial .title {
+  background-color: aliceblue;
+  font-size: 30px;
+  font-family: "karlabold";
+  color: #363A2B;
+}
+.testimonial .title h3::first-letter {
+  text-transform: uppercase;
+}
+.testimonial .container-item {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+.testimonial .item-one {
+  width: 485px;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.testimonial .item-one .user {
+  display: flex;
+  gap: 1.5rem;
+}
+.testimonial .item-one .notes {
+  display: flex;
+}
+.testimonial .item-one .container p:nth-child(1) {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlabold";
+}
+.testimonial .item-one .description p {
+  color: #363A2B;
+  font-family: "karlaregular";
+  font-size: 20px;
+  padding-top: 1rem;
+}
+.testimonial .item-one .description p::first-letter {
+  text-transform: uppercase;
+}
+.testimonial .item-two {
+  width: 485px;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.testimonial .item-two .user {
+  display: flex;
+  gap: 1.5rem;
+}
+.testimonial .item-two .notes {
+  display: flex;
+}
+.testimonial .item-two .container p:nth-child(1) {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlabold";
+}
+.testimonial .item-two .description p {
+  color: #363A2B;
+  font-family: "karlaregular";
+  font-size: 20px;
+  padding-top: 1rem;
+}
+.testimonial .item-two .description p::first-letter {
   text-transform: uppercase;
 }
 
