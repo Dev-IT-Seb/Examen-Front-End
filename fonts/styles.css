@@ -10,6 +10,11 @@
     font-family:("karlaregular");
     src: url("./karla/Karla-Regular.ttf");
 }
+/* MEDIUM */
+@font-face {
+    font-family:("karlamedium");
+    src: url("./karla/Karla-Medium.ttf");
+}
 /*-- PLAYER DISPLAY --*/
 /* BOLD */
 @font-face {

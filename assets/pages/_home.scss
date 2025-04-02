@@ -3,3 +3,450 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+//-----------------------------------//
+//
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .title {
+        position: absolute;
+        color: $TertiaryColor;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: $DisplayMedium;
+        font-size: 100px;
+        text-align: right;
+    }
+}
+//-----------------------------------//
+//
+//--- FORMULAIRE
+.search-location {
+    display: flex;
+    justify-content: center;
+
+    .formHome {
+        background-color: $TertiaryColor;
+        display: flex;
+        flex-direction: column;
+        width: 778px;
+        height: 226px;
+        border-radius: 18px;
+
+        .title {
+            color: $primaryColor;
+            font-size: 30px;
+            font-family: $DisplayBold;
+        }
+
+        .title::first-letter {
+            text-transform: uppercase;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            font-size: 17px;
+            font-family: $KarlaRegular;
+            color: $primaryColor;
+        }
+        .choice-hostel {
+            display: flex;
+            flex-direction: column;
+        }
+        .choice-hostel label::first-letter {
+            text-transform: uppercase;
+        }
+        .number-individu {
+            display: flex;
+            flex-direction: column;
+        }
+        .number-individu label::first-letter {
+            text-transform: uppercase;
+        }
+        .date-reservation {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date-reservation label::first-letter {
+            text-transform: uppercase;
+        }
+        .cta-secondary {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+//-----------------------------------//
+//--- Section Hotel Feu
+.hotel-feu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 32rem;
+        margin-left: 20rem;
+
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+
+        .description {
+            width: 28rem;
+            height: 10rem;
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+
+        .countries {
+            display: flex;
+            flex-direction: row;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            gap: 0.5rem;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                font-family: $KarlaRegular;
+                font-size: 0.9375rem;
+                color: $primaryColor;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    .slideshow-container {
+        display: flex;
+        gap: 3rem;
+
+        img {
+            height: 38.8rem;
+            width: 30.5rem;
+        }
+    }
+}
+
+//-----------------------------------//
+//--- Section Hotel Air
+.hotel-air {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7rem;
+
+    .slideshow-container{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .slideshow-container img{
+        height: 621px;
+        width: 488px;
+    }
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20rem;
+        justify-content: space-between;
+        height: 32rem;
+        width: 30.7rem;
+
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+        .countries {
+            display: flex;
+            flex-direction: row;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            gap: 0.5rem;
+        }
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+            font-family: $KarlaRegular;
+            font-size: 0.9375rem;
+            color: $primaryColor;
+            padding-left: 0.5rem;
+
+        }
+        .description {
+            display: flex;
+            flex-direction: row;
+            width: 28rem;
+            height: 10rem;
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+            width: 28rem;
+            height: 10rem;
+        }
+    }
+}
+//-----------------------------------//
+//--- Section Hotel Terre
+.hotel-terre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7rem;
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 32rem;
+        margin-left: 20rem;
+
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+
+        .description {
+            width: 28rem;
+            height: 10rem;
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+
+        .countries {
+            display: flex;
+            flex-direction: row;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            gap: 0.5rem;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                font-family: $KarlaRegular;
+                font-size: 0.9375rem;
+                color: $primaryColor;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    .slideshow-container {
+        display: flex;
+        gap: 3rem;
+
+        img {
+            height: 38.8rem;
+            width: 30.5rem;
+        }
+    }
+}
+
+//-----------------------------------//
+//--- Section Hotel Eau
+.hotel-eau {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7rem;
+
+    .slideshow-container{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .slideshow-container img{
+        height: 621px;
+        width: 488px;
+    }
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20rem;
+        justify-content: space-between;
+        height: 32rem;
+        width: 30.7rem;
+
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+        .countries {
+            display: flex;
+            flex-direction: row;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            gap: 0.5rem;
+        }
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+            font-family: $KarlaRegular;
+            font-size: 0.9375rem;
+            color: $primaryColor;
+            padding-left: 0.5rem;
+        }
+        .description {
+            display: flex;
+            flex-direction: row;
+            width: 28rem;
+            height: 10rem;
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+            width: 28rem;
+            height: 10rem;
+        }
+    }
+}
+//-----------------------------------//
+//--- Section Concept
+
+.concept {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    img {
+      height: 20.875rem;
+      width: 30.5rem;
+    }
+  
+    .container-concept,
+    .container-architecture {
+      display: flex;
+      flex-direction: column;
+      height: 52.125rem;
+      width: 30.5rem;
+      justify-content: space-between;
+  
+      h3 {
+        font-family: $DisplayBold;
+        font-size: 3rem;
+        color: $primaryColor;
+      }
+  
+      h3::first-letter {
+        text-transform: uppercase;
+      }
+  
+      .description {
+        font-family: $KarlaRegular;
+        font-size: 1.25rem;
+        color: $primaryColor;
+      }
+    }
+  }
+  
+//-----------------------------------//
+//--- Section Creator
+
+.creator {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    .container-description {
+      display: flex;
+      flex-direction: column;
+      width: 31.25rem;
+      gap: 2rem;
+  
+      .title {
+        font-family: $DisplayBold;
+        font-size: 3rem;
+        color: $primaryColor;
+      }
+  
+      h3::first-letter,
+      p::first-letter {
+        text-transform: uppercase;
+      }
+  
+      img {
+        height: 5.5rem;
+        width: 7.3125rem;
+      }
+  
+      .description {
+        display: flex;
+        flex-direction: column;
+        font-family: $KarlaRegular;
+        font-size: 1.25rem;
+        color: $primaryColor;
+      }
+  
+      .fondateur {
+        display: flex;
+        flex-direction: column;
+        font-family: $KarlaBold;
+        font-size: 1.25rem;
+        color: $primaryColor;
+      }
+  
+      .fondateur p:last-child {
+        font-family: $KarlaRegular;
+        font-size: 1.25rem;
+        color: $SecondaryColor;
+      }
+    }
+  }
+  

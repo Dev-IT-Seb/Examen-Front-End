@@ -68,36 +68,48 @@
 					<h1>Lorem ipsum dolor sit amet consectetur.</h1>
 				</div>
 			</div>
-			<!--- FORMULAIRE HOME -->
-			<form action="#" id="formulaires" class="formHome">
-				<!---- TITLE --->
-				<div class="title">
-					<p>rechercher une disponibilité</p>
-				</div>
-				<!--- CHOIX HOTEL --->
-				<label for="choix">choisir un hôtel</label>
-				<select id="choix" name="choix">
-					<option value="hotel terre">hôtel terre</option>
-					<option value="hotel feu">hôtel feu</option>
-					<option value="hotel eau">hôtel eau</option>
-					<option value="hotel air">hôtel air</option>
-				</select>
-				<!--- NOMBRE DE PERSONNE --->
-				<label for="number">nombre de personnes</label>
-				<input type="number" name="number" id="number">
-				<!--- DATE RESERVATION --->
-				<label for="date">Date</label>
-				<input type="date" name="date" id="date">
-				<!--- Bouton secondary --->
-				<div class="button-secondary">
-					<a href="./pages/hotel-feu.html" title="Rechercher votre logement sur les 4 éléments">chercher</a>
-				</div>
-			</form>
+			<div class="search-location">
+				<!--- FORMULAIRE HOME -->
+				<form action="#" id="formulaires" class="formHome">
+					<!---- TITLE --->
+					<div class="title">
+						<p>rechercher une disponibilité</p>
+					</div>
+					<div class="row">
+						<!--- CHOIX HOTEL --->
+						<div class="choice-hostel">
+							<label for="choix">choisir un hôtel</label>
+							<select id="choix" name="choix">
+								<option value="hotel terre">hôtel terre</option>
+								<option value="hotel feu">hôtel feu</option>
+								<option value="hotel eau">hôtel eau</option>
+								<option value="hotel air">hôtel air</option>
+							</select>
+						</div>
+						<div class="number-individu">
+							<!--- NOMBRE DE PERSONNE --->
+							<label for="number">nbr de personnes</label>
+							<input type="number" name="number" id="number">
+						</div>
+						<div class="date-reservation">
+							<!--- DATE RESERVATION --->
+							<label for="date">date</label>
+							<input type="date" name="date" id="date">
+						</div>
+					</div>
+					<div class="cta-secondary">
+						<!--- Bouton secondary --->
+						<div class="button-secondary">
+							<a href="./pages/hotel-feu.html" title="Rechercher votre logement sur les 4 éléments">chercher</a>
+						</div>
+					</div>
+				</form>
+			</div>
 			<!--- SECTION FEU-->
 			<section class="hotel-feu">
 				<!---  CONTAINER FEU --->
 				<div class="container-hotel">
-					<h2>hôtel Feu</h2>
+					<h2>hôtel feu</h2>
 					<!---  EMPLACEMENT --->
 					<div class="location">
 						<div class="countries">
@@ -246,8 +258,57 @@
 					<img src="./assets/images/home-page/items/concept-home.jpg" alt="Image montrant d'un concept d'une hôtel.">
 					<!--- DESCRIPTION -->
 					<div class="description">
-						<p>Les 4 éléments sont un ensemble de logements insolites dans 4 lieux incroyables aux alentours du monde. Chaque hôtel a été imaginé autour d'un élément naturel de la Terre.</p>
+						<p>Depuis l'ouverture de ses 4 hôtels en 2012, 4 Éléments s'est démarqué en proposant des établissements exceptionnels dans des lieux uniques, 
+							symbolisant les quatre éléments : terre, eau, air et feu. Ces hôtels insolites, construits dans des endroits inattendus à travers la planète, 
+							incarnent notre volonté de révolutionner le tourisme en intégrant luxe, aventure et vision à long terme. Chacun de nos établissements offre un environnement et un service uniques, 
+							alliant la rigueur de l'hôtellerie de luxe à une proximité quotidienne avec les habitants. Explorez les environs avec des guides experts tels que des ethnologues,
+							astrophysiciens, géologues et climatologues. Ce que nous vous proposons n'est pas un simple "tour", mais une véritable révolution.
+						</p>
 					</div>
+				</div>
+				<!--- CONTAINER ARCHITECTURE -->
+				<div class="container-architecture">
+					<!--- TITLE -->
+					<h3>l’architecture</h3>
+					<!--- DESCRIPTION -->
+					<div class="description">
+						<p>L'architecture innovante constitue une étape supplémentaire vers l'exploration de l'Espace, 
+							représentant l'extension de notre civilisation vers ses aspects les plus avancés. S'immerger dans l'un de nos hôtels, 
+							c'est embrasser une expérience sensorielle où l'on peut se ressourcer au contact des matières représentatives des quatre éléments.
+							C'est une opportunité de se découvrir en harmonie avec la terre, l'air, l'eau et le feu. Notre approche unique vise à transcender les 
+							frontières traditionnelles du voyage en offrant une expérience qui éveille les sens et connecte les visiteurs à la quintessence de chaque élément. 
+							En plongeant dans nos établissements, les clients sont invités à explorer l'intersection fascinante entre l'innovation architecturale etla nature environnante.
+						</p>
+					</div>
+					<!--- IMG -->
+					<img src="./assets/images/home-page/items/architecture.jpg" alt="Image montrant un hôtel avec une belle architecture.">
+				</div>
+			</section>
+			<!--- SECTION CREATOR -->
+			<section class="creator">
+				<div class="container-description">
+					<div class="title">
+						<h3>le mot du créateur</h3>
+					</div>
+					<div class="description">
+						<img src="./assets/images/home-page/icons/icon.png" alt="Symbole qui représente des chiffres six">
+						<p>l'architecture innovante représente une avancée vers l'exploration de l'Espace, symbolisant l'extension de notre civilisation vers ses plus grandes aspirations. 
+							S'immerger dans nos hôtels, c'est vivre une expérience sensorielle, se ressourcer au contact des matières des quatre éléments. 
+							C'est une découverte en harmonie avec la terre, l'air, l'eau et le feu, où chaque détail architectural offre une connexion profonde avec ces éléments fondamentaux. 
+							Les témoignages de nos visiteurs soulignent l'impact transformateur de cette expérience immersive, 
+							décrivant une reconnexion unique avec la nature et une redécouverte de soi au sein de cet environnement exceptionnel. Cette approche révolutionnaire 
+							redéfinit les attentes du voyage, offrant non seulement un hébergement luxueux, mais une véritable aventure sensorielle qui transcende les limites conventionnelles 
+							du tourisme.
+						</p>
+					</div>
+					<!--- CREATOR --->
+					<div class="fondateur">
+						<p>trinh Xuan Thuan</p>
+						<p>co-fondateur de 4 Eléments</p>
+					</div>
+				</div>
+				<div class="container-photo">
+					<img src="./assets/images/home-page/items/creator.jpg" alt="Créateur des 4 éléments, M. Trinh Xuan Thuan">
 				</div>
 			</section>
 		</main>

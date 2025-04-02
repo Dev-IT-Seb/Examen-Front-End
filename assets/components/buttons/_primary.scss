@@ -1,1 +1,18 @@
 // BOUTON PRIMARY
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/typography" as *;
+@use "../../abstracts/mixins" as *;
+//--------------------------------------//
+//--- BOUTON PRIMAIRE
+.button-primary {
+
+    a {
+        background-color: $SecondaryColor;
+        font-family: $KarlaRegular;
+        color: $ColorBTNPrimary;
+        font-size: 20px;
+        padding: 12px 16px;
+        border-radius: 6px;
+    }
+}
+//--------------------------------------//

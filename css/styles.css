@@ -6,4 +6,477 @@
   text-decoration: none;
 }
 
+.button-primary a {
+  background-color: #4F6234;
+  font-family: "karlaregular";
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.button-secondary a {
+  background-color: #363A2B;
+  color: #FFFFFF;
+  font-family: "karlaregular";
+  font-size: 30px;
+  padding: 15px 29px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.button-secondary a::first-letter {
+  text-transform: uppercase;
+}
+
+header {
+  height: 4.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E0DC;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 85rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 28.5rem;
+  gap: 2.2rem;
+}
+header nav a {
+  color: #363A2B;
+  text-decoration: none;
+  font-family: "karlamedium";
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+header nav img {
+  width: 9.9rem;
+}
+header .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30.2rem;
+}
+header .contact-info .contact {
+  width: 9.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .contact-info .contact a {
+  color: #363A2B;
+  font-size: 1.25rem;
+  font-family: "karlamedium";
+}
+header .contact-info .contact img {
+  width: 1.375rem;
+}
+header .contact-info .connexion {
+  display: flex;
+  gap: 0.8125rem;
+}
+header .contact-info .connexion a:nth-child(2) {
+  color: #363A2B;
+  font-size: 1.25rem;
+  font-family: "karlamedium";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hero-banner .title {
+  position: absolute;
+  color: #D9C7B3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "playermedium";
+  font-size: 100px;
+  text-align: right;
+}
+
+.search-location {
+  display: flex;
+  justify-content: center;
+}
+.search-location .formHome {
+  background-color: #D9C7B3;
+  display: flex;
+  flex-direction: column;
+  width: 778px;
+  height: 226px;
+  border-radius: 18px;
+}
+.search-location .formHome .title {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+}
+.search-location .formHome .title::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome .row {
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+  font-family: "karlaregular";
+  color: #363A2B;
+}
+.search-location .formHome .choice-hostel {
+  display: flex;
+  flex-direction: column;
+}
+.search-location .formHome .choice-hostel label::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome .number-individu {
+  display: flex;
+  flex-direction: column;
+}
+.search-location .formHome .number-individu label::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome .date-reservation {
+  display: flex;
+  flex-direction: column;
+}
+.search-location .formHome .date-reservation label::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome .cta-secondary {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+.hotel-feu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+}
+.hotel-feu .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 32rem;
+  margin-left: 20rem;
+}
+.hotel-feu .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-feu .container-hotel .description {
+  width: 28rem;
+  height: 10rem;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.hotel-feu .location {
+  display: flex;
+  flex-direction: column;
+}
+.hotel-feu .location .countries {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  gap: 0.5rem;
+}
+.hotel-feu .location .testimonial {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-feu .location .testimonial p {
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-feu .slideshow-container {
+  display: flex;
+  gap: 3rem;
+}
+.hotel-feu .slideshow-container img {
+  height: 38.8rem;
+  width: 30.5rem;
+}
+
+.hotel-air {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+.hotel-air .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.hotel-air .slideshow-container img {
+  height: 621px;
+  width: 488px;
+}
+.hotel-air .container-hotel {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rem;
+  justify-content: space-between;
+  height: 32rem;
+  width: 30.7rem;
+}
+.hotel-air .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-air .container-hotel .countries {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  gap: 0.5rem;
+}
+.hotel-air .container-hotel .testimonial {
+  display: flex;
+  flex-direction: row;
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-air .container-hotel .description {
+  display: flex;
+  flex-direction: row;
+  width: 28rem;
+  height: 10rem;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+  width: 28rem;
+  height: 10rem;
+}
+
+.hotel-terre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+.hotel-terre .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 32rem;
+  margin-left: 20rem;
+}
+.hotel-terre .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-terre .container-hotel .description {
+  width: 28rem;
+  height: 10rem;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.hotel-terre .location {
+  display: flex;
+  flex-direction: column;
+}
+.hotel-terre .location .countries {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  gap: 0.5rem;
+}
+.hotel-terre .location .testimonial {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-terre .location .testimonial p {
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-terre .slideshow-container {
+  display: flex;
+  gap: 3rem;
+}
+.hotel-terre .slideshow-container img {
+  height: 38.8rem;
+  width: 30.5rem;
+}
+
+.hotel-eau {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+.hotel-eau .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.hotel-eau .slideshow-container img {
+  height: 621px;
+  width: 488px;
+}
+.hotel-eau .container-hotel {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rem;
+  justify-content: space-between;
+  height: 32rem;
+  width: 30.7rem;
+}
+.hotel-eau .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-eau .container-hotel .countries {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  gap: 0.5rem;
+}
+.hotel-eau .container-hotel .testimonial {
+  display: flex;
+  flex-direction: row;
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-eau .container-hotel .description {
+  display: flex;
+  flex-direction: row;
+  width: 28rem;
+  height: 10rem;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+  width: 28rem;
+  height: 10rem;
+}
+
+.concept {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.concept img {
+  height: 20.875rem;
+  width: 30.5rem;
+}
+.concept .container-concept,
+.concept .container-architecture {
+  display: flex;
+  flex-direction: column;
+  height: 52.125rem;
+  width: 30.5rem;
+  justify-content: space-between;
+}
+.concept .container-concept h3,
+.concept .container-architecture h3 {
+  font-family: "playerbold";
+  font-size: 3rem;
+  color: #363A2B;
+}
+.concept .container-concept h3::first-letter,
+.concept .container-architecture h3::first-letter {
+  text-transform: uppercase;
+}
+.concept .container-concept .description,
+.concept .container-architecture .description {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+
+.creator {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.creator .container-description {
+  display: flex;
+  flex-direction: column;
+  width: 31.25rem;
+  gap: 2rem;
+}
+.creator .container-description .title {
+  font-family: "playerbold";
+  font-size: 3rem;
+  color: #363A2B;
+}
+.creator .container-description h3::first-letter,
+.creator .container-description p::first-letter {
+  text-transform: uppercase;
+}
+.creator .container-description img {
+  height: 5.5rem;
+  width: 7.3125rem;
+}
+.creator .container-description .description {
+  display: flex;
+  flex-direction: column;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.creator .container-description .fondateur {
+  display: flex;
+  flex-direction: column;
+  font-family: "karlabold";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.creator .container-description .fondateur p:last-child {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #4F6234;
+}
+
 /*# sourceMappingURL=styles.css.map */
