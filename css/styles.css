@@ -165,14 +165,6 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlamedium";
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #E5E0DC;
-}
-
 .hero-banner {
   display: flex;
   flex-direction: column;

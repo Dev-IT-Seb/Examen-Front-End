@@ -3,15 +3,7 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: $BackgroundColorPage;
-}
-//-----------------------------------//
-//
+//--- Banner HomePage
 .hero-banner {
     display: flex;
     flex-direction: column;
