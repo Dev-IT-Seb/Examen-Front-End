@@ -5,6 +5,7 @@
 //------------------------------------//
 //--- SECTION FEU
 .hotel-feu {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,6 +34,9 @@
             font-size: 1.25rem;
             color: $primaryColor;
         }
+        p::first-letter{
+            text-transform: uppercase;
+        }
     }
 
     .location {
@@ -60,13 +64,14 @@
             }
         }
     }
-}
-.container-firehotel{
 
-    .description {
+    .slideshow-container {
+        display: flex;
+        gap: 3rem;
 
-        p::first-letter{
-            text-transform: uppercase;
+        img {
+            height: 38.8rem;
+            width: 30.5rem;
         }
     }
 }
@@ -94,7 +99,7 @@
         justify-content: space-around;
 
     }
-    //--------------------------------------- column igloo
+    //------ COLUMN 1 ------//
     .column-igloo {
 
         .column-option-igloo {
@@ -185,8 +190,7 @@
         }
     }
 
-    //--------------COLUMN Lapony-------------//
-
+    //------ COLUMN 2 ------//
     .column-lapony {
 
         .column-option-lapony {
@@ -378,12 +382,13 @@
         text-align: left;
         padding-right: 10rem;
     }
-    .title h3 {
 
+    .title h3 {
         color: $primaryColor;
         font-size: 30px;
         font-family: $DisplayBold;
     } 
+
     h3::first-letter{
         text-transform: uppercase;
     }
@@ -395,7 +400,6 @@
     }
 
     .carousel {
-
         display: flex;
         flex-direction: column;
     }
@@ -459,7 +463,9 @@
     }
 }
 //--------------- TESTIMONIAL -------------------//
-.testimonial {
+.testimonial-clients {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -467,8 +473,6 @@
     .container-full {
         display: flex;
         flex-direction:column;
-        justify-content: center;
-        
     }
 
     .container-item {
@@ -481,7 +485,6 @@
         font-size: 30px;
         font-family: $KarlaBold;
         color: $primaryColor;
-        padding-top: 5rem;
         padding-bottom: 3rem;
 
         h3::first-letter {
@@ -571,7 +574,6 @@
     .container {
         display: flex;
         flex-direction: column;
-
     }
 
     h4 {
@@ -604,7 +606,6 @@
         p:nth-child(3){
             font-family: $KarlaRegular;
         }
-
     }
 
     .accessibilite {
@@ -640,7 +641,6 @@
         .text-box{
             padding-left: 1rem;
         }
-
     }
 
     .row {
@@ -654,9 +654,6 @@
     }
 
     .contact {
-
-        width: 449px;
-
         h4 {
             color: $primaryColor;
             font-size: 30px;
@@ -675,3 +672,4 @@
         }
     }   
 }
+//-----------------------------------------------//

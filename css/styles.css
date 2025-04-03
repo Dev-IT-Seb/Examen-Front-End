@@ -1,3 +1,7 @@
+body {
+  background-color: #E5E0DC;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -165,10 +169,6 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlamedium";
 }
 
-body {
-  background-color: #E5E0DC;
-}
-
 .hero-banner {
   display: flex;
   flex-direction: column;
@@ -260,9 +260,9 @@ body {
 .hotel-feu .container-hotel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 32rem;
+  height: 511px;
   margin-left: 20rem;
+  justify-content: space-around;
 }
 .hotel-feu .container-hotel h2 {
   font-family: "playermedium";
@@ -276,6 +276,9 @@ body {
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #363A2B;
+}
+.hotel-feu .container-hotel p::first-letter {
+  text-transform: uppercase;
 }
 .hotel-feu .location {
   display: flex;
@@ -590,6 +593,9 @@ body {
   font-size: 1.25rem;
   color: #363A2B;
 }
+.hotel-feu .container-firehotel p::first-letter {
+  text-transform: uppercase;
+}
 .hotel-feu .location {
   display: flex;
   flex-direction: column;
@@ -612,9 +618,13 @@ body {
   color: #363A2B;
   padding-left: 0.5rem;
 }
-
-.container-firehotel .description p::first-letter {
-  text-transform: uppercase;
+.hotel-feu .slideshow-container {
+  display: flex;
+  gap: 3rem;
+}
+.hotel-feu .slideshow-container img {
+  height: 38.8rem;
+  width: 30.5rem;
 }
 
 .offres .title-offres {
@@ -928,85 +938,85 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.testimonial {
+.testimonial-clients {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.testimonial .container-full {
+.testimonial-clients .container-full {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.testimonial .container-item {
+.testimonial-clients .container-item {
   display: flex;
   flex-direction: row;
   gap: 15rem;
 }
-.testimonial .title {
+.testimonial-clients .title {
   font-size: 30px;
   font-family: "karlabold";
   color: #363A2B;
-  padding-top: 5rem;
   padding-bottom: 3rem;
 }
-.testimonial .title h3::first-letter {
+.testimonial-clients .title h3::first-letter {
   text-transform: uppercase;
 }
-.testimonial .item-one {
+.testimonial-clients .item-one {
   width: 485px;
   height: 257px;
   display: flex;
   flex-direction: column;
   align-items: left;
 }
-.testimonial .item-one .user {
+.testimonial-clients .item-one .user {
   display: flex;
   gap: 1.5rem;
 }
-.testimonial .item-one .notes {
+.testimonial-clients .item-one .notes {
   display: flex;
 }
-.testimonial .item-one .container p:nth-child(1) {
+.testimonial-clients .item-one .container p:nth-child(1) {
   color: #363A2B;
   font-size: 20px;
   font-family: "karlabold";
 }
-.testimonial .item-one .description p {
+.testimonial-clients .item-one .description p {
   color: #363A2B;
   font-family: "karlaregular";
   font-size: 20px;
   padding-top: 1rem;
 }
-.testimonial .item-one .description p::first-letter {
+.testimonial-clients .item-one .description p::first-letter {
   text-transform: uppercase;
 }
-.testimonial .item-two {
+.testimonial-clients .item-two {
   width: 485px;
   height: 257px;
   display: flex;
   flex-direction: column;
   align-items: left;
 }
-.testimonial .item-two .user {
+.testimonial-clients .item-two .user {
   display: flex;
   gap: 1.5rem;
 }
-.testimonial .item-two .notes {
+.testimonial-clients .item-two .notes {
   display: flex;
 }
-.testimonial .item-two .container p:nth-child(1) {
+.testimonial-clients .item-two .container p:nth-child(1) {
   color: #363A2B;
   font-size: 20px;
   font-family: "karlabold";
 }
-.testimonial .item-two .description p {
+.testimonial-clients .item-two .description p {
   color: #363A2B;
   font-family: "karlaregular";
   font-size: 20px;
   padding-top: 1rem;
 }
-.testimonial .item-two .description p::first-letter {
+.testimonial-clients .item-two .description p::first-letter {
   text-transform: uppercase;
 }
 
@@ -1082,9 +1092,6 @@ body {
 .information .row .column {
   display: flex;
   flex-direction: column;
-}
-.information .contact {
-  width: 449px;
 }
 .information .contact h4 {
   color: #363A2B;

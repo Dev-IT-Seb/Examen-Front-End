@@ -3,11 +3,6 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
-body {
-    background-color: $BackgroundColorPage;
-    
-}
-//------------------------------------//
 //--- Banner HomePage
 .hero-banner {
     display: flex;
@@ -87,7 +82,6 @@ body {
         .cta-secondary {
             display: flex;
             justify-content: center;
-
         }
     }
 }
@@ -104,6 +98,7 @@ body {
 }
 //-----------------------------------//
 //--- Section Hotel Feu
+
 .hotel-feu {
     display: flex;
     flex-direction: row;
@@ -115,9 +110,9 @@ body {
     .container-hotel {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 32rem;
+        height: 511px;
         margin-left: 20rem;
+        justify-content: space-around;
 
         h2 {
             font-family: $DisplayMedium;
@@ -132,6 +127,9 @@ body {
             font-family: $KarlaRegular;
             font-size: 1.25rem;
             color: $primaryColor;
+        }
+        p::first-letter{
+            text-transform: uppercase;
         }
     }
 
@@ -170,10 +168,12 @@ body {
             width: 30.5rem;
         }
     }
-}
 
+
+}
 //-----------------------------------//
 //--- Section Hotel Air
+
 .hotel-air {
     display: flex;
     flex-direction: row;
