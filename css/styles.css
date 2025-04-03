@@ -1222,12 +1222,14 @@ header .contact-info .connexion a:nth-child(2) {
 }
 .formulaire .container-formulaire .container-title {
   text-align: center;
-  font-family: "karlabold";
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.8470588235);
 }
 .formulaire .container-formulaire h1::first-letter {
   text-transform: uppercase;
+}
+.formulaire .container-formulaire h1 {
+  font-family: "karlabold";
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8470588235);
 }
 .formulaire .container-formulaire .form-reservation {
   display: flex;

@@ -27,12 +27,16 @@
 
         .container-title {
             text-align: center;
+        }
+        
+        h1::first-letter{
+            text-transform: uppercase;
+        }
+
+        h1 {
             font-family: $KarlaBold;
             font-size: 30px;
             color: $ColorFormPageBlock;
-        }
-        h1::first-letter{
-            text-transform: uppercase;
         }
         
         .form-reservation {
