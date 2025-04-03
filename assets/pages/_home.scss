@@ -53,9 +53,6 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            font-size: 17px;
-            font-family: $KarlaRegular;
-            color: $primaryColor;
         }
 
         .choice-hostel {
@@ -65,6 +62,57 @@
         .choice-hostel label::first-letter {
             text-transform: uppercase;
         }
+
+        label{
+            font-size: 17px;
+            font-family: $KarlaRegular;
+            color: $ColorFormPageHome;
+            padding-bottom: 0.5rem;
+        }
+
+        .option-form {
+            color: $primaryColor;
+            font-family: $KarlaRegular;
+            font-size: 17px;
+        }
+
+        select{
+            width: 224px;
+            height: 57px;
+            background-color: $InputColor;
+            border: none;
+            outline: none;
+            font-family: $PoppinsRegular;
+            font-size: 17px;
+            color: $ColorFormInput;
+            border-radius: 5%;
+            padding-left: 1rem;
+            
+        }
+        #choix {
+            text-transform: capitalize;
+        }
+
+        #number{
+            width: 224px;
+            height: 57px;
+        }
+
+        #date{
+            width: 224px;
+            height: 57px;
+        }
+
+        input {
+            color: $ColorFormInput;
+            background-color: $InputColor;
+            font-family: $PoppinsRegular;
+            font-size: 18px;
+            padding-left: 1rem;
+            border: none;
+            outline: none;
+        }
+
         .number-individu {
             display: flex;
             flex-direction: column;
@@ -83,17 +131,6 @@
         .cta-secondary {
             display: flex;
             justify-content: center;
-        }
-    }
-}
-.search-location {
-
-    .row {
-
-        label{
-            font-size: 17px;
-            font-family: $KarlaRegular;
-            color: $ColorFormPageHome;
         }
     }
 }
@@ -170,8 +207,6 @@
             width: 30.5rem;
         }
     }
-
-
 }
 //-----------------------------------//
 //--- Section Hotel Air
@@ -306,7 +341,6 @@
         }
     }
 }
-
 //-----------------------------------//
 //--- Section Hotel Eau
 .hotel-eau {
@@ -326,7 +360,7 @@
             width: 488px;
         }
     }
-
+    
     .container-hotel {
         display: flex;
         flex-direction: column;

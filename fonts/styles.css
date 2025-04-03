@@ -26,4 +26,10 @@
     font-family:"playermedium";
     src: url("./player-display/PlayfairDisplay-Medium.ttf");
 }
+/*-- POPPINS --*/
+/* REGULAR */
+@font-face {
+    font-family:"poppinsregular";
+    src: url("./poppins/Poppins-Regular.ttf");
+}
 /*-----------------------------------------------------------*/
