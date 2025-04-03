@@ -207,8 +207,6 @@ header .contact-info .connexion a:nth-child(2) {
 .hero-banner .title {
   position: absolute;
   color: #D9C7B3;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -313,20 +311,10 @@ header .contact-info .connexion a:nth-child(2) {
   justify-content: center;
 }
 
-.hotel-feu {
+.hotel-feu .container-hotel-feu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 8rem;
-  padding-bottom: 7rem;
-}
-.hotel-feu .container-hotel {
-  display: flex;
-  flex-direction: column;
-  height: 511px;
-  margin-left: 20rem;
-  justify-content: space-around;
+  width: 100%;
 }
 .hotel-feu .container-hotel h2 {
   font-family: "playermedium";
@@ -335,8 +323,6 @@ header .contact-info .connexion a:nth-child(2) {
   text-transform: capitalize;
 }
 .hotel-feu .container-hotel .description {
-  width: 28rem;
-  height: 10rem;
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #363A2B;
@@ -344,21 +330,11 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-feu .container-hotel p::first-letter {
   text-transform: uppercase;
 }
-.hotel-feu .location {
-  display: flex;
-  flex-direction: column;
-}
 .hotel-feu .location .countries {
-  display: flex;
-  flex-direction: row;
   text-transform: capitalize;
   font-size: 1.25rem;
   font-family: "karlaregular";
   gap: 0.5rem;
-}
-.hotel-feu .location .testimonial {
-  display: flex;
-  flex-direction: row;
 }
 .hotel-feu .location .testimonial p {
   font-family: "karlaregular";
@@ -367,7 +343,6 @@ header .contact-info .connexion a:nth-child(2) {
   padding-left: 0.5rem;
 }
 .hotel-feu .slideshow-container {
-  display: flex;
   gap: 3rem;
 }
 .hotel-feu .slideshow-container img {
@@ -375,12 +350,13 @@ header .contact-info .connexion a:nth-child(2) {
   width: 30.5rem;
 }
 
-.hotel-air {
+.hotel-air .container-hotel-air {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 7rem;
+  width: 100%;
 }
 .hotel-air .slideshow-container {
   display: flex;
@@ -394,10 +370,7 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-air .container-hotel {
   display: flex;
   flex-direction: column;
-  margin-right: 20rem;
   justify-content: space-between;
-  height: 32rem;
-  width: 30.7rem;
 }
 .hotel-air .container-hotel h2 {
   font-family: "playermedium";
@@ -424,16 +397,12 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-air .container-hotel .description {
   display: flex;
   flex-direction: row;
-  width: 28rem;
-  height: 10rem;
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #363A2B;
-  width: 28rem;
-  height: 10rem;
 }
 
-.hotel-terre {
+.hotel-terre .container-hotel-air {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -444,8 +413,6 @@ header .contact-info .connexion a:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 32rem;
-  margin-left: 20rem;
 }
 .hotel-terre .container-hotel h2 {
   font-family: "playermedium";
@@ -454,8 +421,6 @@ header .contact-info .connexion a:nth-child(2) {
   text-transform: capitalize;
 }
 .hotel-terre .container-hotel .description {
-  width: 28rem;
-  height: 10rem;
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #363A2B;
@@ -491,12 +456,13 @@ header .contact-info .connexion a:nth-child(2) {
   width: 30.5rem;
 }
 
-.hotel-eau {
+.hotel-eau .container-hotel-eau {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 7rem;
+  width: 100%;
 }
 .hotel-eau .slideshow-container {
   display: flex;
@@ -510,10 +476,7 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-eau .container-hotel {
   display: flex;
   flex-direction: column;
-  margin-right: 20rem;
   justify-content: space-between;
-  height: 32rem;
-  width: 30.7rem;
 }
 .hotel-eau .container-hotel h2 {
   font-family: "playermedium";
@@ -540,19 +503,16 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-eau .container-hotel .description {
   display: flex;
   flex-direction: row;
-  width: 28rem;
-  height: 10rem;
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #363A2B;
-  width: 28rem;
-  height: 10rem;
 }
 
 .concept {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
   padding-bottom: 7rem;
 }
 .concept img {
@@ -604,12 +564,12 @@ header .contact-info .connexion a:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
   padding-bottom: 7rem;
 }
 .creator .container-description {
   display: flex;
   flex-direction: column;
-  width: 31.25rem;
   gap: 2rem;
 }
 .creator .container-description .title {
@@ -662,7 +622,6 @@ header .contact-info .connexion a:nth-child(2) {
   display: flex;
   flex-direction: column;
   height: 511px;
-  margin-left: 20rem;
   justify-content: space-around;
 }
 .hotel-feu .container-firehotel h1 {
