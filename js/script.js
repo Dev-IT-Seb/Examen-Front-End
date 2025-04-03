@@ -11,15 +11,38 @@
 //--------------------------//
 //--- Selecteurs
 //formulaire
-let form  = document.getElementById("formulaires");
+let formulaire  = document.getElementById("formulaires");
 //bouton formulaire
 let btnform = document.getElementById("sendForm");
+// Input formulaire
+const lastname = document.getElementById("nom");
+const firstname = document.getElementById("prenom");
+const adressPostal = document.getElementById("formulaire");
+const codePostal = document.getElementById("codepostal");
+const city = document.getElementById("ville"); 
+const courriel = document.getElementById("email");
+const phone = document.getElementById("phone");
 //--------------------------//
-
-if (form){
-    console.log("OK FORM !")
-}
-
+//
 if (btnform){
-    console.log("OK BTN !")
-}
+
+    //Ecoute l'evenement du bouton du formulaire
+    btnform.addEventListener("click", function(event){
+        
+        //Empeche le rechargement de la page
+        event.preventDefault();
+
+        //Enleve le 1er block du formulaire
+        formulaire.style.display = "none";
+
+
+        console.log(firstname.value);
+
+
+
+
+
+
+
+    });
+};
