@@ -51,6 +51,19 @@ footer .button-primary a {
   text-transform: uppercase;
 }
 
+.cta-tertiary {
+  background-color: #4F6234;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: karlamedium;
+  padding: 0.5rem;
+  border-radius: 3%;
+}
+.cta-tertiary a {
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
 footer {
   background-color: #FFFFFF;
   width: 100%;
