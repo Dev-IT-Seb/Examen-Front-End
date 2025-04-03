@@ -105,21 +105,24 @@ footer .contact-color {
   font-size: 15px;
 }
 
-footer .mentions-legales ul {
+footer ul {
   display: flex;
   height: 100%;
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
 }
-footer .mentions-legales li {
+footer ul li {
   list-style: none;
 }
-footer .mentions-legales a {
+footer ul a {
   font-size: 15px;
   font-family: "karlabold";
-  color: #363A2B;
   text-transform: capitalize;
+  color: #363A2B;
+}
+footer ul .cgv {
+  text-transform: uppercase;
 }
 
 header {

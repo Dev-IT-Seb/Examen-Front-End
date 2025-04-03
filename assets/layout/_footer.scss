@@ -69,15 +69,13 @@ footer {
 
 footer {
 
-    .mentions-legales {
+    ul{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
 
-        ul {
-            display: flex;
-            height: 100%;
-            width: 100%;
-            flex-direction: column;
-            justify-content: space-around;
-        }
         li{
             list-style: none;   
         }
@@ -85,8 +83,11 @@ footer {
         a {
             font-size: 15px;
             font-family: $KarlaBold;
-            color: $primaryColor;
             text-transform: capitalize;
+            color: $primaryColor;
+        }
+        .cgv{
+            text-transform:uppercase;
         }
     }
 }
