@@ -1158,59 +1158,81 @@ header .contact-info .connexion a:nth-child(2) {
 }
 
 .formulaire {
-  background-color: #dba9a9;
+  background-image: url("../../assets/images/formulaire/chemin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  align-items: center;
 }
 .formulaire .container-formulaire {
+  padding: 5rem;
+  gap: 5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #E1D2C2;
-  width: 100rem;
-  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.7803921569);
   border-radius: 3%;
+}
+.formulaire .container-formulaire .container-title {
+  text-align: center;
+  font-family: "karlabold";
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8470588235);
+}
+.formulaire .container-formulaire h1::first-letter {
+  text-transform: uppercase;
 }
 .formulaire .container-formulaire .form-reservation {
   display: flex;
   flex-direction: column;
-  width: 75rem;
   gap: 2rem;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
 }
 .formulaire .container-formulaire .container {
   display: flex;
   align-content: center;
   flex-direction: row;
 }
-.formulaire .container-formulaire .container-title {
-  text-align: center;
-  font-family: "karlabold";
-  font-size: 30px;
-  color: #363A2B;
-}
 .formulaire .container-formulaire label {
   font-size: 20px;
   font-family: "karlaregular";
-  color: #363A2B;
+  color: rgba(255, 255, 255, 0.8470588235);
 }
 .formulaire .container-formulaire .lastname {
   padding-right: 2rem;
 }
+.formulaire .container-formulaire .lastname::first-letter {
+  text-transform: uppercase;
+}
 .formulaire .container-formulaire .adress-postal {
   padding-right: 2rem;
+}
+.formulaire .container-formulaire .adress-postal::first-letter {
+  text-transform: uppercase;
 }
 .formulaire .container-formulaire .code-postal {
   padding-right: 2rem;
 }
+.formulaire .container-formulaire .code-postal::first-letter {
+  text-transform: uppercase;
+}
 .formulaire .container-formulaire .courriel {
   padding-right: 2rem;
 }
-.formulaire .container-formulaire .input {
-  width: 10rem;
+.formulaire .container-formulaire .courriel::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .firstname::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .residence::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .number-phone::first-letter {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */

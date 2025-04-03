@@ -4,28 +4,41 @@
 @use "../abstracts/mixins" as *;
 //------------------------------------//
 .formulaire {
-    background-color: $BackgroundColorForm;
+    //background
+    background-image: url("../../assets/images/formulaire/chemin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    //
     display: flex;
     justify-content: center;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    align-items: center;
 
     .container-formulaire {
+        padding: 5rem;
+        gap: 5rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        background-color: $InputColor;
-        width: 100rem;
-        height: 20rem;
+        background-color: $BackgroundFormPageBlock;
         border-radius: 3%;
 
+        .container-title {
+            text-align: center;
+            font-family: $KarlaBold;
+            font-size: 30px;
+            color: $ColorFormPageBlock;
+        }
+        h1::first-letter{
+            text-transform: uppercase;
+        }
+        
         .form-reservation {
             display: flex;
             flex-direction: column;
-            width: 75rem;
             gap: 2rem;
-            padding-bottom: 3rem;
-            padding-top: 3rem;
         }
 
         .container {
@@ -34,32 +47,53 @@
             flex-direction: row;
         }
 
-        .container-title {
-            text-align: center;
-            font-family: $KarlaBold;
-            font-size: 30px;
-            color: $primaryColor;
-        }
-
         label {
             font-size: 20px;
             font-family: $KarlaRegular;
-            color: $primaryColor;
+            color: $ColorFormPageBlock;
         }
+
         .lastname {
             padding-right: 2rem;
         }
+
+        .lastname::first-letter {
+            text-transform: uppercase;
+        }
+
         .adress-postal {
             padding-right: 2rem;
         }
+
+        .adress-postal::first-letter {
+            text-transform: uppercase;
+        }
+
         .code-postal {
             padding-right: 2rem;
         }
+
+        .code-postal::first-letter {
+            text-transform: uppercase;
+        }
+
         .courriel {
             padding-right: 2rem;
         }
-        .input {
-            width: 10rem;
+
+        .courriel::first-letter {
+            text-transform: uppercase;
+        }
+
+        .firstname::first-letter {
+            text-transform: uppercase;
+        }
+
+        .residence::first-letter {
+            text-transform: uppercase;
+        }
+        .number-phone::first-letter {
+            text-transform: uppercase;
         }
     }
 }
