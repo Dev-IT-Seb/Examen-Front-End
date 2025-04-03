@@ -7,12 +7,13 @@
 //  Prix (2 prix)
 //  Nombre de personnes
 //  Date depart et arrivee
-//
 //--------------------------//
 //--- Selecteurs
-//formulaire
+//BLock ormulaire
 let formulaire  = document.getElementById("formulaires");
-//bouton formulaire
+// Resultat formulaire
+let resultatForm = document.getElementById("result");
+//Bouton formulaire
 let btnform = document.getElementById("sendForm");
 // Input formulaire
 const lastname = document.getElementById("nom");
@@ -22,7 +23,9 @@ const codePostal = document.getElementById("codepostal");
 const city = document.getElementById("ville"); 
 const courriel = document.getElementById("email");
 const phone = document.getElementById("phone");
-//--------------------------//
+//-----------------------------------------------------------------------------//
+//TABLEAU ERREUR
+let TableauError = [];
 //
 if (btnform){
 
@@ -30,19 +33,35 @@ if (btnform){
     btnform.addEventListener("click", function(event){
         
         //Empeche le rechargement de la page
-        event.preventDefault();
+        //event.preventDefault();
+
+        //Vider le contenue du tableau
+        //resultatForm.innerHTML = "";
+
+        //Function Nom
+        Name()
 
         //Enleve le 1er block du formulaire
-        formulaire.style.display = "none";
-
-
-        console.log(firstname.value);
-
-
-
-
-
-
+        //formulaire.style.display = "none";
 
     });
 };
+//-----------------------------------------------------------------------------//
+// FUNCTION VERIF PRENOM ET NOM
+function Name(){
+
+    let contentHTML = "";
+
+    if (lastname.value.length >= 2 && lastname.value.length <= 50 && firstname.value.length >= 2 && firstname.value.length <= 50){
+
+        contentHTML = `<p>TEST</p>`;
+
+    }else {
+        TableauError.push(lastname.value);
+        TableauError.push(firstname.value);
+    }
+    //Affichage du resultat
+    resultatForm.innerHTML += contentHTML;
+
+}
+//-----------------------------------------------------------------------------//
