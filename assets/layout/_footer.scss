@@ -81,11 +81,12 @@ footer {
         li{
             list-style: none;   
         }
+
         a {
-            color: red;
             font-size: 15px;
             font-family: $KarlaBold;
             color: $primaryColor;
+            text-transform: capitalize;
         }
     }
 }

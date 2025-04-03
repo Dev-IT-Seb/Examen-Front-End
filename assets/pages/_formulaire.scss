@@ -4,7 +4,7 @@
 @use "../abstracts/mixins" as *;
 //------------------------------------//
 .formulaire {
-    background-color: #dba9a9;
+    background-color: $BackgroundColorForm;
     display: flex;
     justify-content: center;
     padding-top: 10rem;

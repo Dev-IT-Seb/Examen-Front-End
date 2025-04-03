@@ -87,10 +87,11 @@
     h2 {
         font-size: 48px;
         font-family: $DisplayBold;
-        color: #000000;
-        &::first-letter {
-            text-transform: uppercase;
-        }
+        color: $ColorH2OffresFeu;
+    }
+
+    h2::first-letter{
+        text-transform: uppercase;
     }
 
     .container-offres {
@@ -266,6 +267,7 @@
         }
     
         .reservation {
+
             p {
                 color: $primaryColor;
                 font-family: $KarlaMedium;
@@ -294,22 +296,22 @@
         flex-direction: column;
         text-align: left;
         padding: 1.5rem 0;
-    }
 
-    .title h3 {
-        color: $primaryColor;
-        font-size: 30px;
-        font-family: $DisplayBold;
-    } 
+        h3{
+            color: $primaryColor;
+            font-size: 30px;
+            font-family: $DisplayBold;
+        }
 
-    .title h3::first-letter {
-        text-transform: uppercase;
-    }
-
-    .title p {
-        font-size: 20px;
-        font-family: $KarlaRegular;
-        color: #000000;
+        h3::first-letter{
+            text-transform: uppercase;
+        }
+        
+        p{
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            color: $ColorDetailOffreFeu;
+        }
     }
 
     .carousel {
@@ -356,6 +358,9 @@
                 font-size: 20px;
                 font-family: $KarlaRegular;
             }
+            p::first-letter {
+                text-transform: uppercase;
+            }
             p:last-child{
                 padding-top: 0.5rem;
                 color: $ColorCardsSliderDescript;
@@ -368,7 +373,6 @@
 }
 //-----------------------------------//
 //---- Activity
-
 .activity {
 
     display: flex;
@@ -381,22 +385,26 @@
         flex-direction: column;
         text-align: left;
         padding-right: 10rem;
-    }
 
-    .title h3 {
+        h3{
         color: $primaryColor;
         font-size: 30px;
         font-family: $DisplayBold;
-    } 
+        }
 
-    h3::first-letter{
-        text-transform: uppercase;
-    }
+        h3::first-letter{
+            text-transform: uppercase;
+        }
 
-    .title p {
-        font-size: 20px;
-        font-family: $KarlaRegular;
-        color: #000000;
+        p{
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            color: $ColorDetailOffreFeu ;
+        }
+
+        p::first-letter{
+            text-transform: uppercase;
+        }
     }
 
     .carousel {
@@ -417,6 +425,7 @@
                 font-size: 30px;
                 color: $ColorCardsSlider;
             }
+
             h3::first-letter{
                 text-transform: uppercase;
             }
@@ -433,7 +442,6 @@
                 bottom: 0;
                 left: 0;
                 width: 100%;
-                color: white;
                 padding: 1rem;
                 text-align: right;
             }
@@ -441,6 +449,9 @@
                 color: $ColorCardsSlider;
                 font-size: 20px;
                 font-family: $KarlaRegular;
+            }
+            p::first-letter {
+                text-transform: uppercase;
             }
         }
     }
@@ -514,6 +525,7 @@
             font-size: 20px;
             font-family: $KarlaBold;
         }
+
         .description p {
             color: $primaryColor;
             font-family: $KarlaRegular;
@@ -555,10 +567,8 @@
             padding-top: 1rem;
         }
         .description p::first-letter {
-
             text-transform: uppercase;
         }
-
     }
 }
 //--------------- INFORMATION -------------------//
@@ -586,6 +596,7 @@
     }
 
     .text-box {
+
         p {
             color: $primaryColor;
             font-size: 20px;
@@ -596,7 +607,6 @@
         }
 
         p:nth-child(1)::first-letter {
-
             text-transform: uppercase;
         }
         p:nth-child(2){
@@ -618,8 +628,8 @@
         .column {
             display: flex;
             flex-direction: column;
-            
         }
+        
         .column:first-child{
             width: 485px;
             height: 319px;
@@ -654,6 +664,7 @@
     }
 
     .contact {
+        
         h4 {
             color: $primaryColor;
             font-size: 30px;
@@ -661,14 +672,13 @@
         }
 
         p{
-            color: #000000;
+            color: $ColorTxtContact;
             font-family: $KarlaRegular;
             font-size: 20px;
         }
 
         p::first-letter{
             text-transform: uppercase;
-
         }
     }   
 }
