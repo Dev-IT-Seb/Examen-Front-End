@@ -610,18 +610,18 @@ header .contact-info .connexion a:nth-child(2) {
   color: #4F6234;
 }
 
-.hotel-feu {
+.hotel-feu .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
 }
 .hotel-feu .container-firehotel {
   display: flex;
   flex-direction: column;
-  height: 511px;
   justify-content: space-around;
 }
 .hotel-feu .container-firehotel h1 {
@@ -631,8 +631,6 @@ header .contact-info .connexion a:nth-child(2) {
   text-transform: capitalize;
 }
 .hotel-feu .container-firehotel .description {
-  width: 28rem;
-  height: 10rem;
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #363A2B;
@@ -671,8 +669,15 @@ header .contact-info .connexion a:nth-child(2) {
   width: 30.5rem;
 }
 
+.offres .container-offres {
+  display: flex;
+  flex-direction: column;
+}
+.offres .row {
+  display: flex;
+  flex-direction: row;
+}
 .offres .title-offres {
-  padding-left: 25rem;
   padding-bottom: 3rem;
 }
 .offres h2 {
@@ -682,11 +687,6 @@ header .contact-info .connexion a:nth-child(2) {
 }
 .offres h2::first-letter {
   text-transform: uppercase;
-}
-.offres .container-offres {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 .offres .column-igloo .column-option-igloo {
   display: flex;
@@ -724,11 +724,6 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlaregular";
   font-size: 15px;
   padding-bottom: 1rem;
-}
-.offres .column-igloo .card {
-  display: flex;
-  flex-direction: column;
-  width: 40rem;
 }
 .offres .column-igloo .img-igloo {
   display: flex;
@@ -795,11 +790,6 @@ header .contact-info .connexion a:nth-child(2) {
   font-size: 15px;
   padding-bottom: 1rem;
 }
-.offres .column-lapony .card {
-  display: flex;
-  flex-direction: column;
-  width: 40rem;
-}
 .offres .column-lapony .img-lapony {
   display: flex;
   justify-content: center;
@@ -832,9 +822,13 @@ header .contact-info .connexion a:nth-child(2) {
 .services {
   display: flex;
   flex-direction: row;
-  justify-content: right;
   padding-top: 5rem;
   padding-bottom: 3rem;
+}
+.services .carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .services .title {
   display: flex;
@@ -855,10 +849,6 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlaregular";
   color: #000000;
 }
-.services .carousel {
-  display: flex;
-  flex-direction: column;
-}
 .services .slider {
   display: flex;
   flex-direction: row;
@@ -878,14 +868,11 @@ header .contact-info .connexion a:nth-child(2) {
 .services .slider .item img {
   height: 350px;
   width: 488px;
-  display: block;
 }
 .services .slider .item .info {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  color: white;
   padding: 1rem;
   text-align: right;
 }
@@ -907,14 +894,11 @@ header .contact-info .connexion a:nth-child(2) {
 .activity {
   display: flex;
   flex-direction: row;
-  justify-content: right;
   padding-bottom: 3rem;
 }
 .activity .title {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  padding-right: 10rem;
 }
 .activity .title h3 {
   color: #363A2B;
