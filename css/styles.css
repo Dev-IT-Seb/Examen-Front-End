@@ -1283,12 +1283,6 @@ header .contact-info .connexion a:nth-child(2) {
 .formulaire .container-formulaire .lastname::first-letter {
   text-transform: uppercase;
 }
-.formulaire .container-formulaire .adress-postal {
-  padding-right: 2rem;
-}
-.formulaire .container-formulaire .adress-postal::first-letter {
-  text-transform: uppercase;
-}
 .formulaire .container-formulaire .code-postal {
   padding-right: 2rem;
 }
