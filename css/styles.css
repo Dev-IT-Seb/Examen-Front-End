@@ -135,14 +135,18 @@ footer ul .cgv {
 }
 
 header {
-  height: 4.5rem;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #E5E0DC;
 }
+header .burger-menu {
+  display: none;
+}
 header nav {
+  height: 4.5rem;
   display: flex;
   justify-content: space-between;
   width: 85rem;
@@ -199,6 +203,26 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlamedium";
 }
 
+@media (min-width: 720px) and (max-width: 1080px) {
+  header {
+    position: fixed;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    position: fixed;
+    display: flex;
+  }
+  header ul {
+    display: none;
+  }
+  header li {
+    display: none;
+  }
+  .contact-info a:first-child {
+    display: none;
+  }
+}
 .hero-banner {
   display: flex;
   flex-direction: column;
@@ -1154,17 +1178,12 @@ header .contact-info .connexion a:nth-child(2) {
   align-items: center;
 }
 .formulaire .container-formulaire {
-  padding: 5rem;
-  gap: 5rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7803921569);
   border-radius: 3%;
-}
-.formulaire .container-formulaire .container-title {
-  text-align: center;
 }
 .formulaire .container-formulaire h1::first-letter {
   text-transform: uppercase;
@@ -1221,6 +1240,33 @@ header .contact-info .connexion a:nth-child(2) {
 }
 .formulaire .container-formulaire .number-phone::first-letter {
   text-transform: uppercase;
+}
+@media (min-width: 720px) and (max-width: 1080px) {
+  .formulaire .container-formulaire .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .formulaire .container-formulaire .container:last-child {
+    padding-bottom: 2rem;
+  }
+  .formulaire .container-formulaire .container-title {
+    padding-bottom: 2rem;
+  }
+  .formulaire .container-formulaire .number-phone {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .formulaire .container-formulaire .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 720px) and (max-width: 1080px) {
+  .formulaire .container-formulaire {
+    padding: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

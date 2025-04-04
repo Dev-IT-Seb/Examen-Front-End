@@ -3,6 +3,7 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
+
 .formulaire {
     //background
     background-image: url("../../assets/images/formulaire/chemin.jpg");
@@ -16,19 +17,13 @@
     align-items: center;
 
     .container-formulaire {
-        padding: 5rem;
-        gap: 5rem;
+        gap: 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         background-color: $BackgroundFormPageBlock;
         border-radius: 3%;
 
-        .container-title {
-            text-align: center;
-        }
-        
         h1::first-letter{
             text-transform: uppercase;
         }
@@ -38,7 +33,7 @@
             font-size: 30px;
             color: $ColorFormPageBlock;
         }
-        
+
         .form-reservation {
             display: flex;
             flex-direction: column;
@@ -99,6 +94,37 @@
         .number-phone::first-letter {
             text-transform: uppercase;
         }
+        //------------------------------------//
+        // MEDIA QUERIES ENTRE 720 ET 1080px
+        @media (min-width: 720px) and (max-width: 1080px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem; 
+            }
+            .container:last-child{
+                padding-bottom: 2rem;
+            }
+            .container-title {
+                padding-bottom: 2rem;
+            }
+            .number-phone {
+                padding-bottom: 1rem;
+            }
+        }
+        // MEDIA QUERIES MOINS DE 480PX
+        @media (max-width: 480px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
+    // MEDIA QUERIES ENTRE 720 ET 1080px FORMULAIRE
+    @media (min-width: 720px) and (max-width: 1080px) {
+        .container-formulaire{
+            padding: 2rem;
+        }
+    }
+    //------------------------------------//
 }
-//------------------------------------//

@@ -5,14 +5,21 @@
 //------------------------------------//
 //
 header {
-    height: 4.5rem;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: $BackgroundColorPage;
 
+
+    //MOBILE
+    .burger-menu {
+        display: none;
+    }
+
     nav {
+        height: 4.5rem;
         display: flex;
         justify-content: space-between;
         width: 85rem;
@@ -24,6 +31,7 @@ header {
             width: 28.5rem;
             gap: 2.2rem;
         }
+
 
         li:first-letter {
             text-transform: uppercase;
@@ -80,4 +88,36 @@ header {
         }
     }
 }
-//------------------------------------//
+//------------------------------------------------------//
+// MEDIA QUERIES ENTRE 720 ET 1080px
+@media (min-width: 720px) and (max-width: 1080px) {
+
+    header{
+        position: fixed;
+
+    }
+}
+
+// MEDIA QUERIES MOINS DE 480PX
+@media (max-width: 480px) {
+
+    header {
+        position: fixed;
+        display: flex;
+
+        ul {
+            display: none;
+        }
+
+        li{
+            display: none;
+        }
+    }
+    .contact-info{
+        
+        a:first-child{
+            display: none;
+        }
+    }
+}
+//------------------------------------------------------//
