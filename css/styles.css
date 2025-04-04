@@ -137,7 +137,6 @@ footer ul .cgv {
 header {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #E5E0DC;
@@ -227,29 +226,35 @@ header .contact-info .connexion a:nth-child(2) {
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
+  width: 100%;
+}
+.hero-banner .video {
+  width: 100%;
+  height: 100%;
 }
 .hero-banner .title {
   position: absolute;
+  top: 25%;
+  left: 33%;
   color: #D9C7B3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   font-family: "playermedium";
-  font-size: 100px;
-  text-align: right;
+  font-size: 80px;
+  width: 105rem;
 }
 
 .search-location {
   display: flex;
   justify-content: center;
+  padding-bottom: 8.438rem;
 }
 .search-location .formHome {
   background-color: #D9C7B3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 778px;
-  height: 226px;
+  width: 48.625rem;
+  height: 14.125rem;
   border-radius: 18px;
 }
 .search-location .formHome .title {
@@ -285,8 +290,8 @@ header .contact-info .connexion a:nth-child(2) {
   font-size: 17px;
 }
 .search-location .formHome select {
-  width: 224px;
-  height: 57px;
+  width: 14rem;
+  height: 3.563rem;
   background-color: #E1D2C2;
   border: none;
   outline: none;
@@ -300,12 +305,12 @@ header .contact-info .connexion a:nth-child(2) {
   text-transform: capitalize;
 }
 .search-location .formHome #number {
-  width: 224px;
-  height: 57px;
+  width: 14rem;
+  height: 3.563rem;
 }
 .search-location .formHome #date {
-  width: 224px;
-  height: 57px;
+  width: 14rem;
+  height: 3.563rem;
 }
 .search-location .formHome input {
   color: #656366;
@@ -335,10 +340,22 @@ header .contact-info .connexion a:nth-child(2) {
   justify-content: center;
 }
 
+.hotel-feu {
+  width: 100%;
+  padding-bottom: 6.875rem;
+  display: flex;
+  justify-content: center;
+}
 .hotel-feu .container-hotel-feu {
   display: flex;
   flex-direction: row;
-  width: 100%;
+}
+.hotel-feu .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  width: 31.25rem;
 }
 .hotel-feu .container-hotel h2 {
   font-family: "playermedium";
@@ -354,11 +371,13 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-feu .container-hotel p::first-letter {
   text-transform: uppercase;
 }
+.hotel-feu .location {
+  gap: 1rem;
+}
 .hotel-feu .location .countries {
   text-transform: capitalize;
   font-size: 1.25rem;
   font-family: "karlaregular";
-  gap: 0.5rem;
 }
 .hotel-feu .location .testimonial p {
   font-family: "karlaregular";
@@ -367,25 +386,33 @@ header .contact-info .connexion a:nth-child(2) {
   padding-left: 0.5rem;
 }
 .hotel-feu .slideshow-container {
-  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 10rem;
+  width: 43.063rem;
 }
 .hotel-feu .slideshow-container img {
   height: 38.8rem;
   width: 30.5rem;
 }
 
+.hotel-air {
+  width: 100%;
+  padding-bottom: 6.875rem;
+}
 .hotel-air .container-hotel-air {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 7rem;
+  justify-content: left;
+  padding-left: 13rem;
   width: 100%;
 }
 .hotel-air .slideshow-container {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2rem;
+  padding-right: 8rem;
 }
 .hotel-air .slideshow-container img {
   height: 621px;
@@ -394,7 +421,10 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-air .container-hotel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: left;
+  height: 31.938rem;
+  width: 30.688rem;
 }
 .hotel-air .container-hotel h2 {
   font-family: "playermedium";
@@ -409,6 +439,7 @@ header .contact-info .connexion a:nth-child(2) {
   font-size: 1.25rem;
   font-family: "karlaregular";
   gap: 0.5rem;
+  padding-bottom: 1rem;
 }
 .hotel-air .container-hotel .testimonial {
   display: flex;
@@ -416,7 +447,6 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlaregular";
   font-size: 0.9375rem;
   color: #363A2B;
-  padding-left: 0.5rem;
 }
 .hotel-air .container-hotel .description {
   display: flex;
@@ -426,17 +456,22 @@ header .contact-info .connexion a:nth-child(2) {
   color: #363A2B;
 }
 
-.hotel-terre .container-hotel-air {
+.hotel-terre {
+  width: 100%;
+  padding-bottom: 6.875rem;
+  display: flex;
+  justify-content: center;
+}
+.hotel-terre .container-hotel-terre {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 7rem;
 }
 .hotel-terre .container-hotel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: left;
+  width: 31.25rem;
 }
 .hotel-terre .container-hotel h2 {
   font-family: "playermedium";
@@ -449,21 +484,14 @@ header .contact-info .connexion a:nth-child(2) {
   font-size: 1.25rem;
   color: #363A2B;
 }
-.hotel-terre .location {
-  display: flex;
-  flex-direction: column;
+.hotel-terre .container-hotel p::first-letter {
+  text-transform: uppercase;
 }
 .hotel-terre .location .countries {
-  display: flex;
-  flex-direction: row;
   text-transform: capitalize;
   font-size: 1.25rem;
   font-family: "karlaregular";
-  gap: 0.5rem;
-}
-.hotel-terre .location .testimonial {
-  display: flex;
-  flex-direction: row;
+  padding-bottom: 1rem;
 }
 .hotel-terre .location .testimonial p {
   font-family: "karlaregular";
@@ -473,25 +501,32 @@ header .contact-info .connexion a:nth-child(2) {
 }
 .hotel-terre .slideshow-container {
   display: flex;
-  gap: 3rem;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 10rem;
+  width: 43.063rem;
 }
 .hotel-terre .slideshow-container img {
   height: 38.8rem;
   width: 30.5rem;
 }
 
+.hotel-eau {
+  width: 100%;
+  padding-bottom: 6.875rem;
+}
 .hotel-eau .container-hotel-eau {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 7rem;
+  justify-content: left;
+  padding-left: 13rem;
   width: 100%;
 }
 .hotel-eau .slideshow-container {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2rem;
+  padding-right: 8rem;
 }
 .hotel-eau .slideshow-container img {
   height: 621px;
@@ -500,7 +535,10 @@ header .contact-info .connexion a:nth-child(2) {
 .hotel-eau .container-hotel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: left;
+  height: 31.938;
+  width: 30.688rem;
 }
 .hotel-eau .container-hotel h2 {
   font-family: "playermedium";
@@ -514,7 +552,7 @@ header .contact-info .connexion a:nth-child(2) {
   text-transform: capitalize;
   font-size: 1.25rem;
   font-family: "karlaregular";
-  gap: 0.5rem;
+  padding-bottom: 1rem;
 }
 .hotel-eau .container-hotel .testimonial {
   display: flex;
@@ -535,9 +573,10 @@ header .contact-info .connexion a:nth-child(2) {
 .concept {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   padding-bottom: 7rem;
+  gap: 7.875rem;
 }
 .concept img {
   height: 20.875rem;
@@ -546,9 +585,8 @@ header .contact-info .connexion a:nth-child(2) {
 .concept .container-concept {
   display: flex;
   flex-direction: column;
-  height: 52.125rem;
   width: 30.5rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .concept .container-concept h3 {
   font-family: "playerbold";
@@ -568,7 +606,7 @@ header .contact-info .connexion a:nth-child(2) {
   flex-direction: column;
   height: 52.125rem;
   width: 30.5rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .concept .container-architecture h3 {
   font-family: "playerbold";
@@ -587,14 +625,15 @@ header .contact-info .connexion a:nth-child(2) {
 .creator {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   padding-bottom: 7rem;
+  gap: 7.875rem;
 }
 .creator .container-description {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  width: 30.5rem;
 }
 .creator .container-description .title {
   font-family: "playerbold";
@@ -632,6 +671,16 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #4F6234;
+}
+.creator .container-photo {
+  width: 30.5rem;
+  height: 44.5rem;
+}
+.creator .container-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hotel-feu .container {
@@ -683,14 +732,6 @@ header .contact-info .connexion a:nth-child(2) {
   font-size: 0.9375rem;
   color: #363A2B;
   padding-left: 0.5rem;
-}
-.hotel-feu .slideshow-container {
-  display: flex;
-  gap: 3rem;
-}
-.hotel-feu .slideshow-container img {
-  height: 38.8rem;
-  width: 30.5rem;
 }
 
 .offres .container-offres {
