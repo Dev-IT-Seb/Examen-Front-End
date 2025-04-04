@@ -378,6 +378,8 @@ header .contact-info .connexion a:nth-child(2) {
   text-transform: capitalize;
   font-size: 1.25rem;
   font-family: "karlaregular";
+  display: flex;
+  padding-bottom: 1rem;
 }
 .hotel-feu .location .testimonial p {
   font-family: "karlaregular";
@@ -683,67 +685,90 @@ header .contact-info .connexion a:nth-child(2) {
   display: block;
 }
 
-.hotel-feu .container {
+.hotel-feu-page {
+  padding-top: 70px;
+  width: 100%;
+  padding-bottom: 6.875rem;
+  display: flex;
+  justify-content: center;
+}
+.hotel-feu-page .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  width: 100%;
 }
-.hotel-feu .container-firehotel {
+.hotel-feu-page .container-hotel {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: left;
+  width: 31.938rem;
 }
-.hotel-feu .container-firehotel h1 {
+.hotel-feu-page .container-hotel h1 {
   font-family: "playermedium";
   color: #363A2B;
   font-size: 6rem;
   text-transform: capitalize;
 }
-.hotel-feu .container-firehotel .description {
+.hotel-feu-page .container-hotel .description {
   font-family: "karlaregular";
   font-size: 1.25rem;
   color: #363A2B;
 }
-.hotel-feu .container-firehotel p::first-letter {
+.hotel-feu-page .container-hotel p::first-letter {
   text-transform: uppercase;
 }
-.hotel-feu .location {
-  display: flex;
-  flex-direction: column;
+.hotel-feu-page .location {
+  gap: 1rem;
 }
-.hotel-feu .location .countries {
-  display: flex;
-  flex-direction: row;
+.hotel-feu-page .location .countries {
   text-transform: capitalize;
   font-size: 1.25rem;
   font-family: "karlaregular";
-  gap: 0.5rem;
+  display: flex;
+  padding-bottom: 1rem;
 }
-.hotel-feu .location .testimonial {
+.hotel-feu-page .location .testimonial {
   display: flex;
   flex-direction: row;
 }
-.hotel-feu .location .testimonial p {
+.hotel-feu-page .location .testimonial p {
   font-family: "karlaregular";
   font-size: 0.9375rem;
   color: #363A2B;
   padding-left: 0.5rem;
 }
+.hotel-feu-page .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 10rem;
+  width: 43.063rem;
+}
+.hotel-feu-page .slideshow-container img {
+  height: 38.8rem;
+  width: 30.5rem;
+}
 
+.offres {
+  padding-bottom: 133px;
+}
 .offres .container-offres {
   display: flex;
+  justify-content: center;
+}
+.offres .test {
+  display: flex;
   flex-direction: column;
+}
+.offres .title-offres {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 64px;
 }
 .offres .row {
   display: flex;
   flex-direction: row;
-}
-.offres .title-offres {
-  padding-bottom: 3rem;
+  gap: 9rem;
 }
 .offres h2 {
   font-size: 48px;
@@ -753,21 +778,20 @@ header .contact-info .connexion a:nth-child(2) {
 .offres h2::first-letter {
   text-transform: uppercase;
 }
-.offres .column-igloo .column-option-igloo {
+.offres .column-igloo {
+  width: 492px;
+}
+.offres .column-igloo .column-option {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding-right: 10rem;
   gap: 1rem;
 }
-.offres .column-igloo .column-option-igloo .option {
+.offres .column-igloo .column-option .options {
   display: flex;
-}
-.offres .column-igloo .column-option-lapony {
-  display: flex;
-  flex-direction: column;
-}
-.offres .column-igloo .column-option-lapony .option {
-  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 .offres .column-igloo .item {
   display: flex;
@@ -791,13 +815,11 @@ header .contact-info .connexion a:nth-child(2) {
   padding-bottom: 1rem;
 }
 .offres .column-igloo .img-igloo {
-  display: flex;
-  justify-content: center;
+  padding-bottom: 81px;
 }
 .offres .column-igloo .img-igloo img {
-  width: 600px;
+  width: 492px;
   height: 432px;
-  margin-bottom: 90px;
 }
 .offres .column-igloo h3 {
   color: #363A2B;
@@ -811,28 +833,25 @@ header .contact-info .connexion a:nth-child(2) {
   color: #363A2B;
   font-family: "karlamedium";
   font-size: 24px;
-  padding-bottom: 2rem;
+  padding-bottom: 35px;
 }
 .offres .column-igloo .tarif {
   color: #363A2B;
   font-family: "karlabold";
   font-size: 24px;
 }
-.offres .column-lapony .column-option-lapony {
+.offres .column-lapony {
+  width: 492px;
+}
+.offres .column-lapony .column-option {
   display: flex;
   flex-direction: column;
   padding-right: 10rem;
   gap: 1rem;
 }
-.offres .column-lapony .column-option-lapony .option {
+.offres .column-lapony .column-option .option {
   display: flex;
-}
-.offres .column-lapony .column-option-lapony {
-  display: flex;
-  flex-direction: column;
-}
-.offres .column-lapony .column-option-lapony .option {
-  display: flex;
+  gap: 1rem;
 }
 .offres .column-lapony .item {
   display: flex;
@@ -856,13 +875,11 @@ header .contact-info .connexion a:nth-child(2) {
   padding-bottom: 1rem;
 }
 .offres .column-lapony .img-lapony {
-  display: flex;
-  justify-content: center;
+  padding-bottom: 81px;
 }
 .offres .column-lapony .img-lapony img {
-  width: 600px;
+  width: 492px;
   height: 432px;
-  margin-bottom: 90px;
 }
 .offres .column-lapony h3 {
   color: #363A2B;
@@ -876,7 +893,7 @@ header .contact-info .connexion a:nth-child(2) {
   color: #363A2B;
   font-family: "karlamedium";
   font-size: 24px;
-  padding-bottom: 2rem;
+  padding-bottom: 35px;
 }
 .offres .column-lapony .tarif {
   color: #363A2B;
@@ -887,29 +904,28 @@ header .contact-info .connexion a:nth-child(2) {
 .services {
   display: flex;
   flex-direction: row;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  justify-content: right;
+  padding-bottom: 110px;
 }
-.services .carousel {
+.services .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
-.services .title {
+.services .container .title {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 1.5rem 0;
+  padding-bottom: 1.2rem;
 }
-.services .title h3 {
+.services .container .title h3 {
   color: #363A2B;
   font-size: 30px;
   font-family: "playerbold";
 }
-.services .title h3::first-letter {
+.services .container .title h3::first-letter {
   text-transform: uppercase;
 }
-.services .title p {
+.services .container .title p {
   font-size: 20px;
   font-family: "karlaregular";
   color: #000000;
@@ -933,10 +949,11 @@ header .contact-info .connexion a:nth-child(2) {
 .services .slider .item img {
   height: 350px;
   width: 488px;
+  filter: brightness(0.5);
 }
 .services .slider .item .info {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 0;
   padding: 1rem;
   text-align: right;
@@ -959,31 +976,29 @@ header .contact-info .connexion a:nth-child(2) {
 .activity {
   display: flex;
   flex-direction: row;
+  justify-content: right;
   padding-bottom: 3rem;
 }
-.activity .title {
+.activity .container .title {
   display: flex;
   flex-direction: column;
+  padding-bottom: 1.2rem;
 }
-.activity .title h3 {
+.activity .container .title h3 {
   color: #363A2B;
   font-size: 30px;
   font-family: "playerbold";
 }
-.activity .title h3::first-letter {
+.activity .container .title h3::first-letter {
   text-transform: uppercase;
 }
-.activity .title p {
+.activity .container .title p {
   font-size: 20px;
   font-family: "karlaregular";
   color: #000000;
 }
-.activity .title p::first-letter {
+.activity .container .title p::first-letter {
   text-transform: uppercase;
-}
-.activity .carousel {
-  display: flex;
-  flex-direction: column;
 }
 .activity .slider {
   display: flex;
@@ -992,11 +1007,15 @@ header .contact-info .connexion a:nth-child(2) {
 }
 .activity .slider .item {
   position: relative;
+  display: flex;
+  justify-content: right;
 }
 .activity .slider .item h3 {
   font-family: "playerbold";
   font-size: 30px;
   color: #E5E0DC;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
 }
 .activity .slider .item h3::first-letter {
   text-transform: uppercase;
@@ -1004,13 +1023,13 @@ header .contact-info .connexion a:nth-child(2) {
 .activity .slider .item img {
   height: 350px;
   width: 488px;
-  display: block;
+  filter: brightness(0.5);
 }
 .activity .slider .item .info {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  top: 0;
+  width: 342px;
+  height: 100%;
   padding: 1rem;
   text-align: right;
 }
@@ -1018,6 +1037,7 @@ header .contact-info .connexion a:nth-child(2) {
   color: #E5E0DC;
   font-size: 20px;
   font-family: "karlaregular";
+  padding-bottom: 3rem;
 }
 .activity .slider .item p::first-letter {
   text-transform: uppercase;
@@ -1078,10 +1098,14 @@ header .contact-info .connexion a:nth-child(2) {
 .testimonial-clients .item-one .notes {
   display: flex;
 }
+.testimonial-clients .item-one .notes p {
+  padding-left: 1rem;
+}
 .testimonial-clients .item-one .container p:nth-child(1) {
   color: #363A2B;
   font-size: 20px;
   font-family: "karlabold";
+  padding-bottom: 0.5rem;
 }
 .testimonial-clients .item-one .description p {
   color: #363A2B;
@@ -1106,10 +1130,14 @@ header .contact-info .connexion a:nth-child(2) {
 .testimonial-clients .item-two .notes {
   display: flex;
 }
+.testimonial-clients .item-two .notes p {
+  padding-left: 1rem;
+}
 .testimonial-clients .item-two .container p:nth-child(1) {
   color: #363A2B;
   font-size: 20px;
   font-family: "karlabold";
+  padding-bottom: 0.5rem;
 }
 .testimonial-clients .item-two .description p {
   color: #363A2B;
