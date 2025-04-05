@@ -27,6 +27,11 @@
         background-color: $BackgroundFormPageBlock;
         border-radius: 3%;
     
+        .container-title{
+            display: flex;
+            justify-content: center;
+        }
+
         h1::first-letter{
             text-transform: uppercase;
         }
@@ -37,19 +42,85 @@
             color: $ColorFormPageBlock;
             padding-top: 5rem;
         }
-
-
-
-        //-- JS    
+        //
+        //---------------------//
+        //-------- JS ---------//   
+        //
+        //Permet d'afficher et de cacher le 1er block HTML 
         .visible{
             display: block;
         }
+        //---- CSS JS ----//
+        .form-JS{
+            width: 100%;
+            height: 100%;
+            padding: 5rem 3rem;
 
+            h2{
+                color: $ColorFormPageBlock;
+                font-size: 30px;
+                text-align: center;
+                padding-bottom: 3rem;
+            }
 
+            h2::first-letter{
+                text-transform: uppercase;
+            }
 
+            h3{
+                color: $ColorFormPageBlock;
+                font-size: 27px;
+            }
 
+            .row-form:nth-child(2){
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .row-form:nth-child(3){
+                display: flex;
+                justify-content: center;
+            }
+            .departure-choix{
+                padding-bottom: 0.5rem;
+                label{
+                    padding-right: 1.2rem;
+                }
+            }
+            .row-form:nth-child(4){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 2rem;
+            }
+            .row-form:nth-child(5){
+                padding-top: 1rem;
+                padding-right: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
 
-
+            .row-form:nth-child(6){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .optionrepas{
+                display: flex;
+                flex-direction: column;
+            }
+            label{
+                padding-bottom: 0.5rem;
+            }
+        }
+        //-------------------------------//
+        //
         .form-reservation {
             display: flex;
             flex-direction: column;
