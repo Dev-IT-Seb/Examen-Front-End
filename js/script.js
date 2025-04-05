@@ -31,7 +31,7 @@ const lastname = document.getElementById("nom");
 const firstname = document.getElementById("prenom");
 // Coordonnees de l'utilisateur
 const streetNumber = document.getElementById("numberstreet");
-const streerAddress = document.getElementById("street");
+const streetAddress = document.getElementById("street");
 const codePostal = document.getElementById("codepostal");
 const city = document.getElementById("ville"); 
 // Contact de l'utilisateur
@@ -176,4 +176,19 @@ function VerifAdress() {
     // Affichage des résultats dans le bloc HTML
     resultatForm.innerHTML += contentHTML;
 }
+//-----------------------------------------------------------------------------//
+//-- FUNCTIONS A CREER
+
+//VERIF -> RUE 150 caractères
+
+//VERIF -> CODE POSTAL 5 CHIFFRES min/max
+
+//VERIF -> 100 caractères VILLES
+
+//EMAIL -> 100 caractère max et verif si mail
+
+//PHONE -> 10 chiffres ou 14 carcactères
+
+//DATE -> Date arrivée + Depart (VERIF Date)
+
 //-----------------------------------------------------------------------------//
