@@ -3,8 +3,8 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
-
-//Background Image Page Fomrulaire
+//
+//Background Image Page Formulaire
 .backgrd-image-form {
     background-image: url("../../assets/images/formulaire/chemin.jpg");
     background-size: cover;
@@ -26,7 +26,7 @@
         align-items: center;
         background-color: $BackgroundFormPageBlock;
         border-radius: 3%;
-
+    
         h1::first-letter{
             text-transform: uppercase;
         }
@@ -35,18 +35,15 @@
             font-family: $KarlaBold;
             font-size: 30px;
             color: $ColorFormPageBlock;
+            padding-top: 5rem;
         }
 
         .form-reservation {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-        }
-
-        .container {
-            display: flex;
-            align-content: center;
-            flex-direction: row;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 5rem;
         }
 
         label {
@@ -89,30 +86,12 @@
         .number-phone::first-letter {
             text-transform: uppercase;
         }
-        //------------------------------------//
-        // MEDIA QUERIES ENTRE 720 ET 1080px
-        @media (min-width: 720px) and (max-width: 1080px) {
-            .container{
-                display: flex;
-                flex-direction: column;
-                gap: 2rem; 
-            }
-            .container:last-child{
-                padding-bottom: 2rem;
-            }
-            .container-title {
-                padding-bottom: 2rem;
-            }
-            .number-phone {
-                padding-bottom: 1rem;
+    
+        //MEDIA QUERIES MOBILE
+        @media (max-width: 720px) { 
+            .form-reservation{
+                padding: 2.5rem;
             }
         }
     }
-    // MEDIA QUERIES ENTRE 720 ET 1080px FORMULAIRE
-    @media (min-width: 720px) and (max-width: 1080px) {
-        .container-formulaire{
-            padding: 2rem;
-        }
-    }
-    //------------------------------------//
 }

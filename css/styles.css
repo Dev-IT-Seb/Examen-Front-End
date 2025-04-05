@@ -163,6 +163,10 @@ footer nav .cgv {
     padding-bottom: 1rem;
   }
 }
+.color-header {
+  background-color: #E5E0DC;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -259,6 +263,9 @@ header .contact-info .connexion a:nth-child(2) {
   header .link-social img {
     width: 25px;
     height: 25px;
+  }
+  .color-header {
+    background-color: rgba(0, 0, 0, 0.6705882353);
   }
 }
 .hero-banner {
@@ -1059,7 +1066,7 @@ header .contact-info .connexion a:nth-child(2) {
   display: flex;
   justify-content: center;
 }
-.offres .test {
+.offres .offres-themes {
   display: flex;
   flex-direction: column;
 }
@@ -1568,16 +1575,14 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlabold";
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8470588235);
+  padding-top: 5rem;
 }
 .formulaire .container-formulaire .form-reservation {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-.formulaire .container-formulaire .container {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem;
 }
 .formulaire .container-formulaire label {
   font-size: 20px;
@@ -1611,25 +1616,9 @@ header .contact-info .connexion a:nth-child(2) {
 .formulaire .container-formulaire .number-phone::first-letter {
   text-transform: uppercase;
 }
-@media (min-width: 720px) and (max-width: 1080px) {
-  .formulaire .container-formulaire .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .formulaire .container-formulaire .container:last-child {
-    padding-bottom: 2rem;
-  }
-  .formulaire .container-formulaire .container-title {
-    padding-bottom: 2rem;
-  }
-  .formulaire .container-formulaire .number-phone {
-    padding-bottom: 1rem;
-  }
-}
-@media (min-width: 720px) and (max-width: 1080px) {
-  .formulaire .container-formulaire {
-    padding: 2rem;
+@media (max-width: 720px) {
+  .formulaire .container-formulaire .form-reservation {
+    padding: 2.5rem;
   }
 }
 

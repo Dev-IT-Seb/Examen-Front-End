@@ -11,7 +11,7 @@
 	</head>
 	<body class="backgrd-image-form">
 		<!-- HEADER -->
-		<header>
+		<header class="color-header">
 			<nav class="navigation-mobile">
 				<div class="row">
 					<div class="burger-menu">
@@ -38,7 +38,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" title="Pour se rendre sur la page Feu des 4 éléments">feu</a>
+						<a href="./hotel-feu.html" title="Pour se rendre sur la page Feu des 4 éléments">feu</a>
 					</li>
 					<li>
 						<a href="#" title="Pour se rendre sur la page Air des 4 éléments">air</a>
@@ -80,53 +80,48 @@
 						<h1>formulaire de réservation</h1>
 					</div>
 					<form action="/connection.html" id="formulaires" class="form-reservation">
-						<div class="container">
-							<!-- NOM -->
-							<div class="lastname">
-								<label for="nom">votre nom de famille:</label>
-								<input type="text" id="nom" name="nom" placeholder="Saisissez votre nom de famille...">
-							</div>
-							<!-- PRENOM -->
-							<div class="firstname">
-								<label for="prenom">votre prénom:</label>
-								<input type="text" id="prenom" name="prenom" placeholder="Saisissez votre prénom...">
-							</div>
+						<!-- NOM -->
+						<div class="lastname">
+							<label for="nom">votre nom de famille:</label>
+							<input type="text" id="nom" name="nom" placeholder="Saisissez votre nom de famille...">
+						</div>
+						<!-- PRENOM -->
+						<div class="firstname">
+							<label for="prenom">votre prénom:</label>
+							<input type="text" id="prenom" name="prenom" placeholder="Saisissez votre prénom...">
 						</div>
 						<!-- ADRESSE -->
-						<div class="container">
-							<div class="number-street">
-								<label for="numberstreet">Numero de rue:</label>
-								<input type="text" id="numberstreet" name="numberstreet">
-							</div>
-							<div class="street">
-								<label for="street">votre adresse de votre domicile:</label>
-								<input type="text" id="street" name="street">
-							</div>
-							<div class="code-postal">
-								<label for="codepostal">votre code postal:</label>
-								<input type="text" id="codepostal" name="codepostal" placeholder="Saisissez votre code postal...">
-							</div>
-							<div class="residence">
-								<label for="ville">votre ville de résidence:</label>
-								<input type="text" id="ville" name="ville" placeholder="Saisissez votre ville...">
-							</div>
+						<div class="number-street">
+							<label for="numberstreet">Numero de rue:</label>
+							<input type="text" id="numberstreet" name="numberstreet">
+						</div>
+						<div class="street">
+							<label for="street">votre adresse de votre domicile:</label>
+							<input type="text" id="street" name="street">
+						</div>
+						<div class="code-postal">
+							<label for="codepostal">votre code postal:</label>
+							<input type="text" id="codepostal" name="codepostal" placeholder="Saisissez votre code postal...">
+						</div>
+						<div class="residence">
+							<label for="ville">votre ville de résidence:</label>
+							<input type="text" id="ville" name="ville" placeholder="Saisissez votre ville...">
 						</div>
 						<!-- CONTACT -->
-						<div class="container">
-							<div class="courriel">
-								<label for="email">votre adresse mail:</label>
-								<input type="text" id="email" name="email" placeholder="Saisissez votre adresse mail...">
-							</div>
-							<div class="number-phone">
-								<label for="phone">votre numéro de téléphone:</label>
-								<input type="text" name="text" id="phone" placeholder="Saisissez votre numéro de téléphone...">
-							</div>
+						<div class="courriel">
+							<label for="email">votre adresse mail:</label>
+							<input type="text" id="email" name="email" placeholder="Saisissez votre adresse mail...">
+						</div>
+						<div class="number-phone">
+							<label for="phone">votre numéro de téléphone:</label>
+							<input type="text" name="text" id="phone" placeholder="Saisissez votre numéro de téléphone...">
 						</div>
 					</form>
 					<!-- Bouton SEND -->
 					<div class="cta-tertiary" id="sendForm">
 						<a href="#" title="Suivant pour continuer sur le formulaire">Suivant</a>
 					</div>
+					<!--- JS RESULTAT FORM --->
 					<div id="result" class="erreur-formulaire"></div>
 				</div>
 			</section>

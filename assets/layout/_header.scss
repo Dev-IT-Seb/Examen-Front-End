@@ -4,6 +4,10 @@
 @use "../abstracts/mixins" as *;
 //------------------------------------//
 //
+.color-header{
+    background-color: $BackgroundColorPage;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -124,6 +128,9 @@ header {
                 height: 25px;
             }
         }
+    }
+    .color-header{
+        background-color: $ColorHeaderPageForm;
     }
 }
 //------------------------------------------------------//
