@@ -9,11 +9,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $BackgroundColorPage;
 
-
-    //MOBILE
-    .burger-menu {
+    .navigation-mobile{
         display: none;
     }
 
@@ -30,7 +27,6 @@ header {
             width: 28.5rem;
             gap: 2.2rem;
         }
-
 
         li:first-letter {
             text-transform: uppercase;
@@ -74,7 +70,6 @@ header {
                 width: 1.375rem;
             }
         }
-
         .connexion {
             display: flex;
             gap: 0.8125rem;
@@ -83,6 +78,50 @@ header {
                 color: $primaryColor;
                 font-size: 1.25rem;
                 font-family: $KarlaMedium;
+            }
+        }
+    }
+}
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    header{
+        
+        .navigation-desktop{
+            display: none;
+        }
+        .navigation-mobile{
+            display: block;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25rem;
+            height: 100%;
+            width: 100%;
+        }
+
+        .burger-menu{
+
+            img{
+                width: 32px;
+                height: 32px;
+                color: black;
+            }
+        }
+
+        .link-social{
+
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding-right: 1rem;
+            img{
+                width: 25px;
+                height: 25px;
             }
         }
     }

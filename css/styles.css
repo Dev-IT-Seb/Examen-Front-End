@@ -69,7 +69,20 @@ footer {
 footer nav {
   display: flex;
   flex-direction: row;
+}
+footer nav .row {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 720px) {
+  footer nav .row {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    gap: 1rem;
+  }
 }
 footer nav .social-media {
   display: flex;
@@ -85,7 +98,6 @@ footer nav .logo img {
 footer nav .contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   gap: 1rem;
 }
 footer nav h4 {
@@ -96,52 +108,68 @@ footer nav h4 {
 footer nav h4::first-letter {
   text-transform: uppercase;
 }
-
-footer .contact p::first-letter {
+footer nav .contact p::first-letter {
   text-transform: uppercase;
 }
-footer .contact p:nth-child(4) {
+footer nav .contact p:nth-child(4) {
   padding-bottom: 1rem;
 }
-footer .contact p {
+footer nav .contact p {
   color: #363A2B;
   font-size: 15px;
   font-family: "karlaregular";
 }
-footer .contact-color {
+footer nav .contact-color {
   color: #363A2B;
   font-family: "karlabold";
   font-size: 15px;
 }
-
-footer ul {
+footer nav ul {
   display: flex;
   height: 100%;
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
 }
-footer ul li {
+footer nav li {
   list-style: none;
 }
-footer ul a {
+footer nav a {
   font-size: 15px;
   font-family: "karlabold";
   text-transform: capitalize;
   color: #363A2B;
 }
-footer ul .cgv {
+footer nav .cgv {
   text-transform: uppercase;
 }
 
+@media (max-width: 720px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    gap: 1rem;
+  }
+  footer ul {
+    gap: 1rem;
+  }
+  footer .button-primary {
+    padding-bottom: 1rem;
+  }
+}
 header {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E5E0DC;
 }
-header .burger-menu {
+header .navigation-mobile {
   display: none;
 }
 header nav {
@@ -202,6 +230,37 @@ header .contact-info .connexion a:nth-child(2) {
   font-family: "karlamedium";
 }
 
+@media (max-width: 720px) {
+  header .navigation-desktop {
+    display: none;
+  }
+  header .navigation-mobile {
+    display: block;
+  }
+  header .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25rem;
+    height: 100%;
+    width: 100%;
+  }
+  header .burger-menu img {
+    width: 32px;
+    height: 32px;
+    color: black;
+  }
+  header .link-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 1rem;
+  }
+  header .link-social img {
+    width: 25px;
+    height: 25px;
+  }
+}
 .hero-banner {
   display: flex;
   flex-direction: column;
@@ -223,6 +282,12 @@ header .contact-info .connexion a:nth-child(2) {
   width: 105rem;
 }
 @media (max-width: 720px) {
+  .hero-banner .video {
+    width: auto;
+    transform: translate(0px, -100px);
+    filter: brightness(80%);
+    z-index: -1;
+  }
   .hero-banner .title {
     font-size: 15px;
     top: 40%;
@@ -330,15 +395,15 @@ header .contact-info .connexion a:nth-child(2) {
   .search-location .formHome {
     display: flex;
     align-items: center;
-    height: 25rem;
-    width: 317px;
+    height: 27rem;
+    width: 400px;
   }
   .search-location .formHome .title {
     padding-left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
+    font-size: 22px;
   }
   .search-location .formHome .choice-hostel {
     display: flex;
@@ -1474,15 +1539,19 @@ header .contact-info .connexion a:nth-child(2) {
   text-transform: uppercase;
 }
 
-.formulaire {
+.backgrd-image-form {
   background-image: url("../../assets/images/formulaire/chemin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+}
+
+.formulaire {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .formulaire .container-formulaire {
   gap: 2rem;

@@ -4,17 +4,20 @@
 @use "../abstracts/mixins" as *;
 //------------------------------------//
 
-.formulaire {
-    //background
+//Background Image Page Fomrulaire
+.backgrd-image-form {
     background-image: url("../../assets/images/formulaire/chemin.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    //
+}
+
+.formulaire {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 
     .container-formulaire {
         gap: 2rem;

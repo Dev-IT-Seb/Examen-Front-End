@@ -3,7 +3,7 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
-
+//
 footer{
     background-color: $ColorFooter;
     width: 100%;
@@ -13,8 +13,24 @@ footer{
     nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        //MEDIA QUERIES MOBILE ROW FOOTER
+        @media (max-width: 720px) {
+            .row{
+                display: flex;
+                flex-direction: column;
+                width: 304px;
+                gap: 1rem;
+            }
+        }
+
         .social-media {
             display: flex;
             flex-direction: column;
@@ -30,7 +46,6 @@ footer{
         .contact {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             gap: 1rem;
         }
 
@@ -43,42 +58,37 @@ footer{
         h4::first-letter {
             text-transform: uppercase;
         }
-    }
-}
 
-footer {
+        .contact{
 
-    .contact{
-
-        p::first-letter{
-            text-transform: uppercase;
-        } 
-
-        p:nth-child(4){
-            padding-bottom: 1rem;
+            p::first-letter{
+                text-transform: uppercase;
+            } 
+    
+            p:nth-child(4){
+                padding-bottom: 1rem;
+            }
+    
+            p {
+                color: $primaryColor;
+                font-size: 15px;
+                font-family: $KarlaRegular;
+            }
         }
 
-        p {
+        .contact-color {
             color: $primaryColor;
+            font-family: $KarlaBold;
             font-size: 15px;
-            font-family: $KarlaRegular;
         }
-    }
-    .contact-color {
-        color: $primaryColor;
-        font-family: $KarlaBold;
-        font-size: 15px;
-    }
-}
 
-footer {
-
-    ul{
-        display: flex;
-        height: 100%;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-around;
+        ul{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+        }
 
         li{
             list-style: none;   
@@ -96,3 +106,30 @@ footer {
         }
     }
 }
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    footer{
+        
+        nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            width: 304px;
+            gap: 1rem;
+        }
+
+        ul{
+            gap: 1rem;
+        }
+        .button-primary{
+            padding-bottom: 1rem;
+        }
+    }
+}
+//------------------------------------//

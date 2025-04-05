@@ -28,6 +28,12 @@
 
     //MEDIA QUERIES MOBILE
     @media (max-width: 720px) {
+        .video{
+            width: auto;
+            transform: translate(0px, -100px);
+            filter: brightness(80%);
+            z-index: -1;
+        }
         .title {
             font-size: 15px;
             top: 40%;
@@ -154,18 +160,17 @@
     //MEDIA QUERIES MOBILE
     @media (max-width: 720px) {
         .formHome {
-            
             display: flex;
             align-items: center;
-            height: 25rem;
-            width: 317px;
+            height: 27rem;
+            width: 400px;
 
             .title{
                 padding-left: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 17px;
+                font-size: 22px;
             }
 
             .choice-hostel {
@@ -615,7 +620,6 @@
 @media (max-width: 720px) {
 
     .hotel-eau{
-        
         .container-hotel-eau{
             display: flex;
             flex-direction: column;
@@ -684,7 +688,6 @@
             font-size: 1.25rem;
             color: $primaryColor;
           }
-        
     }
     //ARCHITECTURE
     .container-architecture {
@@ -693,7 +696,6 @@
       height: 52.125rem;
       width: 30.5rem;
       justify-content: space-around;
-
 
       h3 {
         font-family: $DisplayBold;
@@ -714,9 +716,6 @@
       .mobile-hidden-architecture{
         display: none;
       }
-
-
-
     }  
   }
 
