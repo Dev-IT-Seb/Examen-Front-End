@@ -3,6 +3,7 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 //------------------------------------//
+//
 //--- Banner HomePage
 .hero-banner {
     display: flex;
@@ -23,6 +24,15 @@
         font-family: $DisplayMedium;
         font-size: 80px;
         width: 105rem;
+    }
+
+    //MEDIA QUERIES MOBILE
+    @media (max-width: 720px) {
+        .title {
+            font-size: 15px;
+            top: 40%;
+            left: 8%;
+        }
     }
 }
 //-----------------------------------//
@@ -140,6 +150,59 @@
             justify-content: center;
         }
     }
+
+    //MEDIA QUERIES MOBILE
+    @media (max-width: 720px) {
+        .formHome {
+            
+            display: flex;
+            align-items: center;
+            height: 25rem;
+            width: 317px;
+
+            .title{
+                padding-left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 17px;
+            }
+
+            .choice-hostel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .number-individu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .date-reservation{
+                display: flex;
+                align-items: center;
+                padding-bottom: 1rem;
+            }
+
+            .row{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                width: 224px;
+                height: 223px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .search-location{
+        padding-bottom: 4rem;
+    }
 }
 //-----------------------------------//
 //--- Section Hotel Feu
@@ -215,6 +278,54 @@
         }
     }
 }
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+    .hotel-feu{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .container-hotel-feu{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 100%;
+
+            .container-hotel{
+                display: flex;
+                justify-content: space-around;
+                gap: 1rem;
+                height: 0%;
+            }
+            h2{
+                padding-bottom: 1.5rem;
+                font-size: 64px;
+            }
+            .location{
+                padding-bottom: 1.5rem;
+            }
+            .description{
+                padding-bottom: 2rem;
+            }
+
+            .slideshow-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                width: 0;
+            }
+            img:last-child{
+                display: none;
+            }
+            .testimonial{
+                display: flex;
+            }
+        }
+    }
+}
 //-----------------------------------//
 //--- Section Hotel Air
 .hotel-air {
@@ -281,7 +392,38 @@
             color: $primaryColor;
         }
     }
-}  
+}
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .hotel-air{
+
+        .container-hotel-air{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+
+            h2{
+                font-size: 64px;
+            }
+
+            .container-hotel{
+                height: 0%;
+                gap: 2rem;
+            }
+        }
+
+        .slideshow-container{
+            padding-right: 0;
+        }
+
+        img:last-child{
+            display: none;
+        }
+    }
+}
 //-----------------------------------//
 //--- Section Hotel Terre
 
@@ -355,6 +497,53 @@
 
     }
 }
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+    .hotel-terre{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .container-hotel-terre{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 100%;
+
+            .container-hotel{
+                display: flex;
+                justify-content: space-around;
+                gap: 1rem;
+                height: 0%;
+            }
+            h2{
+                padding-bottom: 1.5rem;
+                font-size: 64px;
+            }
+            .location{
+                padding-bottom: 1.5rem;
+            }
+            .description{
+                padding-bottom: 2rem;
+            }
+
+            .slideshow-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                width: 0;
+            }
+            img:last-child{
+                display: none;
+            }
+            .testimonial{
+                display: flex;
+            }
+        }
+    }
+}
 //-----------------------------------//
 //--- Section Hotel Eau
 .hotel-eau {
@@ -420,7 +609,44 @@
             color: $primaryColor;
         }
     }
-}  
+} 
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .hotel-eau{
+        
+        .container-hotel-eau{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+
+            h2{
+                font-size: 64px;
+            }
+        }
+
+        .slideshow-container{
+            padding-right: 0;
+        }
+        img:last-child{
+            display: none;
+        }
+        .testimonial{
+            padding-bottom: 1rem;
+        }
+
+        .description{
+            padding-bottom: 2rem;
+        }
+        .container-hotel{
+            height: 100%;
+            gap: 1rem;
+        }
+    }
+}
 //-----------------------------------//
 //--- Section Concept
 .concept {
@@ -484,8 +710,56 @@
         font-size: 1.25rem;
         color: $primaryColor;
       }
+
+      .mobile-hidden-architecture{
+        display: none;
+      }
+
+
+
     }  
   }
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .concept{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        padding-bottom: 3rem;
+
+
+        .container-concept{
+            padding-bottom: 2rem;
+            img{
+                padding-bottom: 1.5rem;
+            }
+            h3{
+                padding-bottom: 1rem;
+                font-size: 40px;
+            }
+        }
+        .container-architecture{
+            justify-content:center;
+            gap: 1.5rem;
+
+            h3{
+                font-size: 40px;
+            }
+
+            .desktop-hidden-architecture{
+                display: none;
+            }
+
+            .mobile-hidden-architecture{
+                display: block;
+            }
+        }
+    }   
+}
 //-----------------------------------//
 //--- Section Creator
 .creator {
@@ -506,7 +780,7 @@
         font-size: 3rem;
         color: $primaryColor;
       }
-  
+
       p::first-letter {
         text-transform: uppercase;
       }
@@ -545,6 +819,10 @@
         font-size: 1.25rem;
         color: $SecondaryColor;
       }
+
+      .mobile-creator{
+        display: none;
+      }
     }
 
     .container-photo {
@@ -559,4 +837,44 @@
         }
     }
   }
+//---------------------------------------------//
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .creator{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            padding-bottom: 2rem;
+
+            img{
+                width: 30rem;
+                height: 20rem;
+            }
+            .mobile-creator{
+                display: block;
+              }
+        }
+
+        h3{
+            padding-bottom: 2rem;
+            font-size: 40px;
+        }
+
+        .description{
+            padding-bottom: 1rem;
+        }
+
+        .container-photo{
+            display: none;
+        }
+    }
+}
 //-----------------------------------//

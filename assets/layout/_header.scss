@@ -88,35 +88,3 @@ header {
     }
 }
 //------------------------------------------------------//
-// MEDIA QUERIES ENTRE 720 ET 1080px
-@media (min-width: 720px) and (max-width: 1080px) {
-
-    header{
-        position: fixed;
-
-    }
-}
-
-// MEDIA QUERIES MOINS DE 480PX
-@media (max-width: 480px) {
-
-    header {
-        position: fixed;
-        display: flex;
-
-        ul {
-            display: none;
-        }
-
-        li{
-            display: none;
-        }
-    }
-    .contact-info{
-        
-        a:first-child{
-            display: none;
-        }
-    }
-}
-//------------------------------------------------------//

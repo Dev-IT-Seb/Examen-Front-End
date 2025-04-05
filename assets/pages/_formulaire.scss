@@ -104,13 +104,6 @@
                 padding-bottom: 1rem;
             }
         }
-        // MEDIA QUERIES MOINS DE 480PX
-        @media (max-width: 480px) {
-            .container {
-                display: flex;
-                flex-direction: column;
-            }
-        }
     }
     // MEDIA QUERIES ENTRE 720 ET 1080px FORMULAIRE
     @media (min-width: 720px) and (max-width: 1080px) {
