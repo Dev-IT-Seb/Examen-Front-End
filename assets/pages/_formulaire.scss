@@ -38,6 +38,18 @@
             padding-top: 5rem;
         }
 
+
+
+        //-- JS    
+        .visible{
+            display: block;
+        }
+
+
+
+
+
+
         .form-reservation {
             display: flex;
             flex-direction: column;
@@ -93,5 +105,12 @@
                 padding: 2.5rem;
             }
         }
+
+        //--- CONTAINER JS
+        .erreur-formulaire{
+            color: rgb(184, 183, 183);
+            background-color: rgba(0, 0, 0, 0.541);
+        }
+
     }
 }

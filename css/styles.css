@@ -1577,6 +1577,9 @@ header .contact-info .connexion a:nth-child(2) {
   color: rgba(255, 255, 255, 0.8470588235);
   padding-top: 5rem;
 }
+.formulaire .container-formulaire .visible {
+  display: block;
+}
 .formulaire .container-formulaire .form-reservation {
   display: flex;
   flex-direction: column;
@@ -1620,6 +1623,10 @@ header .contact-info .connexion a:nth-child(2) {
   .formulaire .container-formulaire .form-reservation {
     padding: 2.5rem;
   }
+}
+.formulaire .container-formulaire .erreur-formulaire {
+  color: rgb(184, 183, 183);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
 /*# sourceMappingURL=styles.css.map */

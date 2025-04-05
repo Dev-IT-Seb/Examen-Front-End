@@ -9,49 +9,71 @@
 //  Date depart et arrivee
 //-----------------------------------------------------------------------------//
 // Sources documentation :
-//isNaN : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/isNaN
-//
-//
+// (isNaN) : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 //
 //-----------------------------------------------------------------------------//
-//--- Selecteurs html structure formulaire
-// Resultat formulaire
-let resultatForm = document.getElementById("result");
-// Block formulaire
-let formulaire  = document.getElementById("formulaires");
+//--- Selecteurs HMTL structure formulaire
+// Block du formulaire visible au début
+let formBlock  = document.getElementById("formBlock");
 // Bouton formulaire
 let btnform = document.getElementById("sendForm");
+// Affichage du block Options
+let blockOptions = document.querySelector(".form-JS");
+// Resultat du formulaire (Verification)
+let resultatForm = document.getElementById("result");
 //-----------------------------------------------------------------------------//
-//--- Selecteurs HTML infos utilisateur
-// Identity
+//--- Selecteurs HTML (Information utilisateur)
+// Identite de l'utilisateur
 const lastname = document.getElementById("nom");
 const firstname = document.getElementById("prenom");
-// Address info
+// Coordonnees de l'utilisateur
 const streetNumber = document.getElementById("numberstreet");
 const streerAddress = document.getElementById("street");
 const codePostal = document.getElementById("codepostal");
 const city = document.getElementById("ville"); 
-// Contact
+// Contact de l'utilisateur
 const courriel = document.getElementById("email");
 const phone = document.getElementById("phone");
 //-----------------------------------------------------------------------------//
+//
 // Bouton Action du Formulaire
 if (btnform) {
     // Evenement du click du bouton du formulaire
     btnform.addEventListener("click", function(event) {
+        
         // Empêche le rechargement de la page
         event.preventDefault();
 
         // Vider le contenu du bloc HTML
         resultatForm.innerHTML = "";
 
-        // Vérification des champs
-        VerifIdentity();
-        VerifAdress();
+        // LANCEMENT FUNCTION
+        //VerifIdentity();
+        //VerifAdress();
+
+        //
+        if(formBlock.classList.contains("visible")){
+
+            let formContentOption  = `
+            <h1>vos options<h1>
+            <form action="" class="">
+                <div class="lastname">
+                    <label for="nom">votre nom de famille:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Saisissez votre nom de famille...">
+                </div>
+            </form>
+            `;
+            // Fait disparaitre le 1er block du formulaire
+            formBlock.style.display = "none"; 
+
+            //Ajout du block HTML/JS (OPTIONS)
+            blockOptions.innerHTML = formContentOption;
+
+        }
     });
 };
 //-----------------------------------------------------------------------------//
-// Fonction de validation du formulaire
+//--- Function Verification Nom et Prenom 
 function VerifIdentity() {
     // Vider le contenu du bloc HTML
     let contentHTML = "";
@@ -73,9 +95,8 @@ function VerifIdentity() {
     // Affichage des résultats dans le bloc HTML
     resultatForm.innerHTML += contentHTML;
 }
-
 //-----------------------------------------------------------------------------//
-// Fonction de vérification de l'adresse
+//--- Function Verification Adresse
 function VerifAdress() {
     // Vider le contenu du bloc HTML
     let contentHTML = "";
