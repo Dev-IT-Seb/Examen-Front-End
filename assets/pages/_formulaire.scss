@@ -58,7 +58,7 @@
         .form-JS{
             width: 100%;
             height: 100%;
-            padding: 5rem 3rem;
+            padding: 2rem 3rem;
 
             h2{
                 color: $ColorFormPageBlock;
@@ -122,6 +122,12 @@
             label{
                 padding-bottom: 0.5rem;
             }
+        }
+        //--------------------------------//
+        //Block Fin resultat
+        .style-resulat{
+            padding: 2rem;
+            color: $ColortxtForm;
         }
         //-------------------------------//
         //

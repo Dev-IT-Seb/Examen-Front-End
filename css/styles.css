@@ -1587,7 +1587,7 @@ header .contact-info .connexion a:nth-child(2) {
 .formulaire .container-formulaire .form-JS {
   width: 100%;
   height: 100%;
-  padding: 5rem 3rem;
+  padding: 2rem 3rem;
 }
 .formulaire .container-formulaire .form-JS h2 {
   color: rgba(255, 255, 255, 0.8470588235);
@@ -1646,6 +1646,10 @@ header .contact-info .connexion a:nth-child(2) {
 }
 .formulaire .container-formulaire .form-JS label {
   padding-bottom: 0.5rem;
+}
+.formulaire .container-formulaire .style-resulat {
+  padding: 2rem;
+  color: #FFFFFF;
 }
 .formulaire .container-formulaire .form-reservation {
   display: flex;
