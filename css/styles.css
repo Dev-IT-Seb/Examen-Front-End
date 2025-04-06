@@ -1695,9 +1695,5 @@ header .contact-info .connexion a:nth-child(2) {
     padding: 2.5rem;
   }
 }
-.formulaire .container-formulaire .erreur-formulaire {
-  color: rgb(184, 183, 183);
-  background-color: rgba(0, 0, 0, 0.541);
-}
 
 /*# sourceMappingURL=styles.css.map */

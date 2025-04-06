@@ -136,7 +136,6 @@ btnform.addEventListener("click", function(event) {
         if (contentHTML.includes("Erreur")) {
             isValid = false;
         }
-
         // Affichage des résultats
         if (isValid) {
             //Ajout du text après l'envoi du formulaire
